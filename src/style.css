@@ -1,17 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Poppins:ital@0;1&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins";
-  text-decoration: none;
-  scroll-behavior: smooth;
-  list-style: none;
-}
-a {
-  color: black;
-}
 header {
   position: fixed;
   top: 0.6rem;
@@ -28,8 +14,9 @@ header {
   padding: 0.5rem 1.5rem;
   border-radius: 1rem;
   z-index: 1000;
-  box-shadow: rgba(0, 0, 0, 0.37) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  box-shadow: ;
 }
+
 .logo {
   color: white;
   font-size: 1rem;
@@ -37,13 +24,16 @@ header {
   letter-spacing: 1px;
   transition: 0.3s ease-in-out;
 }
+
 .logo:hover {
   transform: scale(1.05);
 }
+
 .nav-links {
   display: flex;
   gap: 2rem;
 }
+
 li a {
   color: white;
   position: relative; /* for hover Effect */
@@ -63,6 +53,7 @@ li a::before {
 li a:hover::before {
   width: 100%;
 }
+
 .visit-btn {
   border: none;
   padding: 0.5rem 1.5rem;
@@ -76,10 +67,12 @@ li a:hover::before {
   transition: 0.9s ease-in-out;
   background: linear-gradient(to right, rgb(0, 157, 255), rgb(255, 0, 255));
 }
+
 .visit-btn a {
   color: white;
   font-family: "Nanum Gothic Coding";
 }
+
 .visit-btn:hover {
   background: linear-gradient(to right, rgb(255, 0, 255), rgb(0, 157, 255));
 }
@@ -285,23 +278,23 @@ section {
   font-weight: 600;
 }
 /* Contact */
-.contact-container{
+.contact-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-.contact-left{
+.contact-left {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 20px;
 }
-.contact-left-title h2{
+.contact-left-title h2 {
   font-weight: 600;
   color: black;
   font-size: 40px;
 }
-.contact-input{
+.contact-input {
   width: 400px;
   height: 50px;
   border: none;
@@ -310,22 +303,26 @@ section {
   font-weight: 500;
   font-size: 18px;
   border-radius: 50px;
-  background: linear-gradient(to right, rgb(0, 157, 255,0.2), rgb(255, 0, 255,0.2));
+  background: linear-gradient(
+    to right,
+    rgb(0, 157, 255, 0.2),
+    rgb(255, 0, 255, 0.2)
+  );
   color: black;
 }
-.contact-input::placeholder{
+.contact-input::placeholder {
   font-size: 18px;
   color: #303030;
 }
-.contact-left textarea{
+.contact-left textarea {
   height: 140px;
   padding-top: 15px;
   border-radius: 20px;
 }
-.contact-input:focus{
+.contact-input:focus {
   border: 1px solid rgb(131, 131, 255);
 }
-.contact-left button{
+.contact-left button {
   display: flex;
   align-items: center;
   padding: 15px 30px;
@@ -335,19 +332,18 @@ section {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  background: linear-gradient(to right, rgb(0, 157, 255,0.8), rgb(255, 0, 255,0.8));
+  background: linear-gradient(
+    to right,
+    rgb(0, 157, 255, 0.8),
+    rgb(255, 0, 255, 0.8)
+  );
 }
-.contact-left button i{
+.contact-left button i {
   height: 15px;
 }
-.contact-right img{
+.contact-right img {
   width: 350px;
 }
-
-
-
-
-
 
 footer {
   bottom: 0;
@@ -407,8 +403,8 @@ footer ul li a {
     font-size: 2.5rem;
   }
 }
-@media (max-width: 900px){
-  .contact-right{
+@media (max-width: 900px) {
+  .contact-right {
     display: none;
   }
 }
@@ -435,7 +431,7 @@ footer ul li a {
   }
   .input-box i {
     display: none;
-}
+  }
   .grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem 1rem;
@@ -444,10 +440,10 @@ footer ul li a {
     width: 200px;
     height: 200px;
   }
-  .contact-input{
+  .contact-input {
     width: 80vw;
   }
-  .contact-right{
+  .contact-right {
     display: none;
   }
 }
@@ -520,27 +516,28 @@ footer ul li a {
   header {
     padding: 0.7rem 1rem;
     gap: 8rem;
-}
-#menu-icon {
-  font-size: 1.3rem;
-  display: none;
-}
-.about-container .img {
-  width: 250px;
-  height: 250px;
-}
-.skill-title, .section-title {
-  padding-top: 2rem;
-}
-.skill-desc h3 {
-  font-size: 1rem;
-  margin-top: 1rem;
-  margin-bottom: 3px;
-}
-footer ul li a {
-  font-size: 0.8rem;
-}
-.copyright {
-  margin-top: 1rem;
-}
+  }
+  #menu-icon {
+    font-size: 1.3rem;
+    display: none;
+  }
+  .about-container .img {
+    width: 250px;
+    height: 250px;
+  }
+  .skill-title,
+  .section-title {
+    padding-top: 2rem;
+  }
+  .skill-desc h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3px;
+  }
+  footer ul li a {
+    font-size: 0.8rem;
+  }
+  .copyright {
+    margin-top: 1rem;
+  }
 }
