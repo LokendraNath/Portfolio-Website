@@ -1,6 +1,9 @@
 const Skills = () => {
   return (
-    <section id="skill" className="skill">
+    <section
+      id="skill"
+      className="skill min-h-screen py-32 px-[12%] w-full relative"
+    >
       <h1 className="skill-title">Skills</h1>
 
       <div className="skill-info">

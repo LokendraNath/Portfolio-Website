@@ -1,6 +1,9 @@
 const Contact = () => {
   return (
-    <section className="contact" id="contact">
+    <section
+      className="contact min-h-screen py-32 px-[12%] w-full relative"
+      id="contact"
+    >
       <div className="contact-left-title">
         <h2 className="section-title">Contact Us</h2>
       </div>

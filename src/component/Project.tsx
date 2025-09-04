@@ -1,6 +1,9 @@
 const Project = () => {
   return (
-    <section id="project" className="projects">
+    <section
+      id="project"
+      className="projects min-h-screen py-32 px-[12%] w-full relative"
+    >
       <h2 className="section-title">Recent Projects</h2>
 
       <div className="projects-grid">

@@ -7,13 +7,23 @@
 }
 
 @theme {
-  --font-gothic: "Nanum Gothic Coding";
+  --font-gothic: "Nanum Gothic Coding", monospace;
+  --font-poppins: "Poppins", sans-serif;
 }
 
-.navbar-a {
-  @apply relative tracking-wide before:top-6 before:rounded-2xl before:ease-in-out 
-           before:content-[''] before:absolute before:left-0 before:bottom-0 
-           before:h-[2px] before:w-0 before:bg-black 
-           hover:before:w-full 
-           before:transition-all before:duration-300 before:bg-[linear-gradient(to_right,rgb(0,157,255),rgb(255,0,255))];
+@layer components {
+  /* Header */
+  .navbar-a {
+    @apply relative tracking-wide
+           before:content-['']
+           before:absolute before:left-0 before:bottom-0
+           before:h-[2px] before:w-0
+           hover:before:w-full
+           before:transition-all before:duration-300
+           before:bg-[linear-gradient(to_right,rgb(0,157,255),rgb(255,0,255))];
+  }
+  /* About */
+  .btn {
+    @apply border py-2 px-5 text-xl cursor-pointer  rounded-2xl font-semibold text-nowrap transition duration-300 ease-in-out hover:translate-y-[-4px] hover:shadow-2xl;
+  }
 }
