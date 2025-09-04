@@ -1,13 +1,7 @@
 const Header = () => {
   return (
     <header className="fixed top-3 left-[50%] transform translate-x-[-50%] flex items-center gap-4 bg-[rgba(0,0,0,0.671)] backdrop-blur-md text-white py-2 px-6 rounded-2xl z-50 shadow-2xl">
-      <a
-        href="#"
-        className="text-lg text-nowrap tracking-wide transition duration-300 ease-in-out hover:scale-105"
-      >
-        <span>Lokendra Nath</span>
-      </a>
-      <ul className="nav-links flex gap-3">
+      <ul className="flex gap-6">
         <li>
           <a href="#about" className="navbar-a">
             About
@@ -35,12 +29,12 @@ const Header = () => {
       </div>
 
       <button
-        className="px-4 py-2 rounded-lg text-white font-medium 
+        className="hidden lg:flex px-4 py-2 rounded-lg text-white font-medium 
          bg-gradient-to-r from-[#0077ff] to-[#f001f0] 
-         hover:opacity-90 transition flex"
+         hover:opacity-90 transition"
       >
         <svg
-          class="inline-block w-5 h-5 mr-2"
+          className="inline-block w-5 h-5 mr-2"
           fill="currentColor"
           viewBox="0 0 24 24"
         >
