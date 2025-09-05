@@ -34,10 +34,10 @@ const Skills = () => {
   return (
     <section
       id="skill"
-      className="skill min-h-screen py-20 sm:py-40 lg:py-20 px-10 lg:px-10 w-full"
+      className="skill min-h-screen pt-20 sm:pt-40 lg:pt-22 px-10 lg:px-10 w-full"
     >
       <h1 className="section-title">Skills</h1>
-      <div className=" flex items-center justify-center sm:mt-20">
+      <div className=" flex items-center justify-center sm:mt-20 lg:mt-10">
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-10">
           {skills.map(({ name, Icon }) => (
             <SkillCard key={name} skill={name} Icon={Icon} />

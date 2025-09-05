@@ -3,14 +3,17 @@ import rightLogo from "../assets/img/right-logo.png";
 const Contact = () => {
   return (
     <section
-      className="contact min-h-screen py-20 px-[12%] w-full relative"
+      className="contact min-h-screen flex items-center justify-center flex-col px-[12%] w-full lg:pt-20 lg:mb-20"
       id="contact"
     >
       <div className="contact-left-title">
         <h2 className="section-title">Contact Us</h2>
       </div>
 
-      <div className="contact-container flex items-center justify-center">
+      <div className="contact-container gap-30 flex lg:mt-20 lg:mt-5 items-center justify-center">
+        <div className="contact-right hidden lg:block">
+          <img src={rightLogo} alt="" className="w-80" />
+        </div>
         <form
           action="https://api.web3forms.com/submit"
           method="POST"
@@ -47,9 +50,6 @@ const Contact = () => {
             Submit
           </button>
         </form>
-        <div className="contact-right hidden lg:block">
-          <img src={rightLogo} alt="" className="w-80" />
-        </div>
       </div>
     </section>
   );
