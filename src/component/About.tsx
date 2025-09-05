@@ -1,9 +1,6 @@
 const About = () => {
   return (
-    <section
-      id="about"
-      className="min-h-screen border py-32 px-10 lg:px-15 w-full relative"
-    >
+    <section id="about" className="min-h-screen flex  px-5 lg:px-15 w-full">
       <div className="about-container flex items-center justify-center gap-28">
         <img
           className="img hidden lg:block object-cover w-96 h-96 rotate-[-15deg] rounded-[50%]"
