@@ -1,13 +1,58 @@
+import project1 from "../assets/Project Image/project1.png";
+
+const portfolioProjects = [
+  {
+    title: "Fireboard Admin Page",
+    image: project1,
+    live: "https://www.google.com/",
+    repo: "https://www.google.com/",
+  },
+  {
+    title: "Fireboard Admin Page",
+    image: project1,
+    live: "https://www.google.com/",
+    repo: "https://www.google.com/",
+  },
+];
+
 const Project = () => {
   return (
-    <section
-      id="project"
-      className="projects min-h-screen py-32 px-[12%] w-full relative"
-    >
-      <h2 className="section-title">Recent Projects</h2>
+    <section id="project" className="container min-h-screen py-20">
+      <h2 className="section-title tracking-widest">Projects</h2>
 
-      <div className="projects-grid">
-        <div className="project-card">
+      <div className="flex flex-col mb-10">
+        {portfolioProjects.map((project) => (
+          <div
+            key={project.title}
+            className="bg-stone-200 py-3 px-3 text-center rounded-3xl space-y-3 mb-3"
+          >
+            <h3 className="text-2xl">{project.title}</h3>
+
+            <img
+              className="rounded-3xl"
+              src={project.image}
+              alt={project.title}
+            />
+            <div className="space-x-5 mt-5">
+              <a
+                href={project.live}
+                target="__blank"
+                className="border py-1 px-4 rounded-lg transition hover:-translate-y-3 duration-150"
+              >
+                <button>Live</button>
+              </a>
+              <a
+                href={project.repo}
+                target="__blank"
+                className="py-1 border px-4 rounded-lg hover:-translate-y-3 duration-150"
+              >
+                <button>Repo</button>
+              </a>
+            </div>
+          </div>
+        ))}
+
+        {/* <div className="project-card">
           <img src="img/to-do.png" alt="" />
           <h3>To Do List</h3>
           <p>
@@ -78,7 +123,7 @@ const Project = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

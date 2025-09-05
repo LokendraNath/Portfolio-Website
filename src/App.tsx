@@ -7,7 +7,7 @@ import Skills from "./component/Skills";
 
 const App = () => {
   return (
-    <div>
+    <div className="px-3">
       <Header />
       <About />
       <Skills />
