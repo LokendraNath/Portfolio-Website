@@ -34,7 +34,7 @@ const Skills = () => {
   return (
     <section
       id="skill"
-      className="skill min-h-screen py-20 sm:py-40 px-10 lg:px-10 w-full"
+      className="skill min-h-screen py-20 sm:py-40 lg:py-20 px-10 lg:px-10 w-full"
     >
       <h1 className="section-title">Skills</h1>
       <div className=" flex items-center justify-center sm:mt-20">
