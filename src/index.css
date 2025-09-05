@@ -26,4 +26,21 @@
   .btn {
     @apply border py-2 px-5 text-xl cursor-pointer  rounded-2xl font-semibold text-nowrap transition duration-300 ease-in-out hover:translate-y-[-4px] hover:shadow-2xl;
   }
+  .section-title {
+    @apply text-4xl text-center font-semibold mb-10;
+  }
+  .skillCardDiv {
+    @apply rounded-2xl p-2 flex flex-col items-center cursor-pointer transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-[0px_23px_46px_-18px_#000000];
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(219, 219, 219);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, rgb(0, 157, 255), rgb(255, 0, 255));
+  border-radius: 10px;
 }

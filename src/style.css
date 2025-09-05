@@ -221,9 +221,6 @@ section {
   margin-top: 1rem;
   margin-bottom: 3px;
 }
-.skill-desc p {
-  font-size: 0.7rem;
-}
 ::-webkit-scrollbar {
   width: 10px;
 }
