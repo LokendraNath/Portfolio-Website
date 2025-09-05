@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center  px-5 lg:px-15 w-full"
+      className="min-h-screen flex items-center justify-center  px-2 lg:px-15 w-full"
     >
       <div className="about-container flex items-center justify-center gap-28">
         <img

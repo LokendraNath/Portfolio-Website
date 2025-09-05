@@ -23,7 +23,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <p className="font-light mt-3 text-stone-800 tracking-widest text-sm">
+      <p className="font-light mt-3 text-stone-800 tracking-widest text-sm mb-10">
         &#169; All Right Reserved | Lokendra Nath
       </p>
     </footer>

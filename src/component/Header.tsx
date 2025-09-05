@@ -1,6 +1,7 @@
 const Header = () => {
   return (
-    <header className="fixed top-3 left-[50%] transform translate-x-[-50%] flex items-center gap-4 bg-[rgba(0,0,0,0.671)] backdrop-blur-md text-white py-2 px-6 rounded-2xl z-50 shadow-2xl">
+    <header className="fixed top-5 left-[50%] transform w-[90%] md:w-[80%] lg:w-[60%] translate-x-[-50%] flex items-center gap-4 bg-[rgba(0,0,0,0.671)] backdrop-blur-md text-white py-3 md:py-5 px-6 rounded-2xl z-50 shadow-2xl justify-between">
+      <h1 className="hidden md:block text-xl">Lokendra Nath</h1>
       <ul className="flex gap-6">
         <li>
           <a href="#about" className="navbar-a">
@@ -23,13 +24,8 @@ const Header = () => {
           </a>
         </li>
       </ul>
-
-      <div className="hidden">
-        <i className="text-2xl fa-solid fa-bars" id="menu-icon"></i>
-      </div>
-
       <button
-        className="hidden lg:flex px-4 py-2 rounded-lg text-white font-medium 
+        className="hidden md:block px-4 py-2 rounded-lg text-white font-medium 
          bg-gradient-to-r from-[#0077ff] to-[#f001f0] 
          hover:opacity-90 transition"
       >
