@@ -32,6 +32,12 @@
   .skillCardDiv {
     @apply rounded-2xl p-2 flex flex-col items-center cursor-pointer transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-[0px_23px_46px_-18px_#000000];
   }
+  .contactInput {
+    @apply w-72 h-13 outline-none pl-6 font-medium text-lg rounded-xl bg-gradient-to-r from-[rgba(0,157,255,0.2)] to-[rgba(255,0,255,0.2)];
+  }
+  .contactInput:focus {
+    @apply border border-[#8383ff];
+  }
 }
 ::-webkit-scrollbar {
   width: 10px;
