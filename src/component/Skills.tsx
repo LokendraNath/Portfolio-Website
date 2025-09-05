@@ -17,17 +17,28 @@ const skills = [
   { name: "NPM", Icon: nmpIcon },
   { name: "React", Icon: reactIcon },
   { name: "TypeScript", Icon: tsIcon },
+  { name: "TypeScript", Icon: tsIcon },
+  { name: "TypeScript", Icon: tsIcon },
+  { name: "TypeScript", Icon: tsIcon },
+  { name: "TypeScript", Icon: tsIcon },
+  { name: "TypeScript", Icon: tsIcon },
+  { name: "TypeScript", Icon: tsIcon },
+  { name: "TypeScript", Icon: tsIcon },
+  { name: "TypeScript", Icon: tsIcon },
+  { name: "TypeScript", Icon: tsIcon },
+  { name: "TypeScript", Icon: tsIcon },
+  { name: "TypeScript", Icon: tsIcon },
 ];
 
 const Skills = () => {
   return (
     <section
       id="skill"
-      className="skill min-h-screen py-20 lg:py:30 px-10 lg:px-10 w-full"
+      className="skill min-h-screen py-20 sm:py-40 px-10 lg:px-10 w-full"
     >
       <h1 className="section-title">Skills</h1>
-      <div className="skill-info flex items-center justify-center">
-        <div className="grid grid-cols-3 lg:grid-cols-5 gap-5">
+      <div className=" flex items-center justify-center sm:mt-20">
+        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-10">
           {skills.map(({ name, Icon }) => (
             <SkillCard key={name} skill={name} Icon={Icon} />
           ))}
