@@ -1,30 +1,33 @@
-import project1 from "../assets/Project Image/project1.png";
+import financeAdmin from "../assets/Project Image/finance-admin.png";
+import ShoppingCart from "../assets/Project Image/shoppingCart.png";
+import TravelPage from "../assets/Project Image/travel-page.png";
+import expanceTracker from "../assets/Project Image/Expense Tracker.png";
 import ProjectCard from "./ProjectCard";
 
 const portfolioProjects = [
   {
-    title: "Fireboard Admin Page",
-    image: project1,
-    live: "https://www.google.com/",
-    repo: "https://www.google.com/",
+    title: "Finance Admin Page",
+    image: financeAdmin,
+    live: "https://admin-dashboard-lokendra.vercel.app/",
+    repo: "https://github.com/LokendraNath/Admin-Dashboard",
   },
   {
-    title: "Fireboard Admin Page",
-    image: project1,
-    live: "https://www.google.com/",
-    repo: "https://www.google.com/",
+    title: "Shopping Cart",
+    image: ShoppingCart,
+    live: "https://shopping-cart-lokendra.vercel.app/",
+    repo: "https://github.com/LokendraNath/Shopping-Cart-Odin",
   },
   {
-    title: "Fireboard Admin Page",
-    image: project1,
-    live: "https://www.google.com/",
-    repo: "https://www.google.com/",
+    title: "Travel App",
+    image: TravelPage,
+    live: "https://lokendra-travel-web.netlify.app/",
+    repo: "https://github.com/LokendraNath/Travel-Website",
   },
   {
-    title: "Fireboard Admin Page",
-    image: project1,
-    live: "https://www.google.com/",
-    repo: "https://www.google.com/",
+    title: "Expense Tracker",
+    image: expanceTracker,
+    live: "https://lokendra-expense-tracker.netlify.app/",
+    repo: "#",
   },
 ];
 

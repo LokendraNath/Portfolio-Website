@@ -38,9 +38,6 @@
   .contactInput:focus {
     @apply border border-[#8383ff];
   }
-  .project-icon {
-    @apply border py-1 px-4 sm:py-2 sm:px-7 lg:text-lg sm:text-2xl font-bold rounded-lg;
-  }
 }
 ::-webkit-scrollbar {
   width: 10px;
