@@ -11,7 +11,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill, Icon }) => {
       {typeof Icon === "string" && (
         <img
           src={Icon}
-          className="w-15 sm:w-25 h-15 sm:h-25 mb-2 sm:mb-4"
+          className="w-15 sm:w-22 h-15 sm:h-22 mb-2 sm:mb-4"
           alt=""
         />
       )}
