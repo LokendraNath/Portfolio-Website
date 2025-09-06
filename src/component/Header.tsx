@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="fixed top-5 lg:top-2 left-[50%] transform w-auto sm:w-[80%] lg:w-[60%] translate-x-[-50%] flex items-center gap-4 bg-[rgba(0,0,0,0.671)] backdrop-blur-md text-white py-3 md:py-3 px-6 rounded-2xl z-50 shadow-2xl justify-between">
+    <header className="fixed top-5 lg:top-2 left-[50%] transform w-auto lg:w-[60%] translate-x-[-50%] flex items-center gap-4 bg-[rgba(0,0,0,0.671)] backdrop-blur-md text-white py-3 md:py-3 px-6 rounded-2xl z-50 shadow-2xl justify-between">
       <h1 className="hidden md:block text-xl">Lokendra Nath</h1>
       <ul className="flex gap-6">
         <li>

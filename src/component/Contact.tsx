@@ -10,7 +10,7 @@ const Contact = () => {
         <h2 className="section-title">Contact Us</h2>
       </div>
 
-      <div className="contact-container gap-30 flex lg:mt-20 lg:mt-5 items-center justify-center">
+      <div className="contact-container gap-30 flex lg:mt-5 items-center justify-center">
         <div className="contact-right hidden lg:block">
           <img src={rightLogo} alt="" className="w-80" />
         </div>

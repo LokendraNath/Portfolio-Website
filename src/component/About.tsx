@@ -5,8 +5,8 @@ const About = () => {
       className="min-h-screen flex items-center justify-center  px-2 lg:px-15 w-full lg:py-30"
     >
       <div className="about-container flex sm:flex-col lg:flex-row items-center justify-center gap-22">
-        <div className="info-box flex flex-col text-center items-start gap-6 lg:gap-4">
-          <div className="text mb-5 lg:mb-3 items-start flex flex-col">
+        <div className="info-box flex flex-col text-center items-center lg:items-start gap-6 lg:gap-4">
+          <div className="text mb-5 lg:mb-3 items-center lg:items-start flex flex-col">
             <h3 className="text-4xl sm:text-4xl lg:text-3xl mb-3 font-semibold opacity-70 ">
               Hi, I'm
             </h3>
@@ -22,18 +22,20 @@ const About = () => {
             <div className="btn">
               Resume <i className="fa-solid fa-download ml-2"></i>
             </div>
-            <div className="btn">Contact</div>
+            <div className="btn">
+              <a href="#contact">Contact</a>
+            </div>
           </div>
 
           <div className="social space-x-10 sm:space-x-20 lg:space-x-10 mt-4 sm:mt-6 flex lg:pl-3">
             <a href="https://github.com/LokendraNath" target="_blank">
-              <i className="text-3xl lg:text-4xl sm:text-5xl cursor-pointer fa-brands fa-github"></i>
+              <i className="text-3xl lg:text-4xl sm:text-5xl cursor-pointer fa-brands fa-github transition duration-300 ease-in-out hover:translate-y-[-4px]"></i>
             </a>
             <a href="https://www.linkedin.com/in/lokendranath/" target="_blank">
-              <i className="text-3xl sm:text-5xl lg:text-4xl cursor-pointer fa-brands fa-linkedin"></i>
+              <i className="text-3xl sm:text-5xl lg:text-4xl cursor-pointer fa-brands fa-linkedin transition duration-300 ease-in-out hover:translate-y-[-4px]"></i>
             </a>
-            <a href="https://www.linkedin.com/in/lokendranath/" target="_blank">
-              <i className="text-3xl sm:text-5xl lg:text-4xl cursor-pointer fa-brands fa-square-x-twitter"></i>
+            <a href="https://x.com/iamlokendranath" target="_blank">
+              <i className="text-3xl sm:text-5xl lg:text-4xl cursor-pointer fa-brands fa-square-x-twitter transition duration-300 ease-in-out hover:translate-y-[-4px]"></i>
             </a>
           </div>
         </div>
