@@ -1,4 +1,4 @@
-import rightLogo from "../assets/img/right-logo.png";
+import rightLogo from "../../public/assets/img/right-logo.png";
 
 const Contact = () => {
   return (

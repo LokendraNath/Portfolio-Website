@@ -1,7 +1,7 @@
-import financeAdmin from "../assets/Project Image/finance-admin.png";
-import ShoppingCart from "../assets/Project Image/shoppingCart.png";
-import TravelPage from "../assets/Project Image/travel-page.png";
-import expanceTracker from "../assets/Project Image/Expense Tracker.png";
+import financeAdmin from "../../public/assets/Project Image/finance-admin.png";
+import ShoppingCart from "../../public/assets/Project Image/shoppingCart.png";
+import TravelPage from "../../public/assets/Project Image/travel-page.png";
+import expanceTracker from "../../public/assets/Project Image/Expense Tracker.png";
 import ProjectCard from "./ProjectCard";
 
 const portfolioProjects = [
