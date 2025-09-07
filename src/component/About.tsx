@@ -1,8 +1,4 @@
-const RESUME = "https://localhost:3000/frontent-lokendra-resume.pdf";
-
 const About = () => {
-  const downloadFileAtURL = (url) => {};
-
   return (
     <section
       id="about"
