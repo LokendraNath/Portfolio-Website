@@ -1,4 +1,8 @@
+const RESUME = "https://localhost:3000/frontent-lokendra-resume.pdf";
+
 const About = () => {
+  const downloadFileAtURL = (url) => {};
+
   return (
     <section
       id="about"
@@ -19,12 +23,17 @@ const About = () => {
           </div>
 
           <div className="btn-group flex gap-4 space-x-2 sm:space-x-10 lg:space-x-3">
-            <div className="btn">
+            <a
+              href="/resume.pdf"
+              download="Lokendra_Nath_Resume.pdf"
+              className="btn"
+            >
               Resume <i className="fa-solid fa-download ml-2"></i>
-            </div>
-            <div className="btn">
-              <a href="#contact">Contact</a>
-            </div>
+            </a>
+
+            <a href="#contact" className="btn">
+              Contact
+            </a>
           </div>
 
           <div className="social space-x-10 sm:space-x-20 lg:space-x-10 mt-4 sm:mt-6 flex lg:pl-3">
