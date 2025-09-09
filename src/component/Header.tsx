@@ -1,4 +1,17 @@
 import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+
+const mobileNavVarient = {
+  hidden: { opacity: 0, y: -100 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 200,
+    },
+  },
+};
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -12,7 +25,16 @@ const Header = () => {
   }, [click]);
 
   return (
-    <header className="fixed top-3 lg:top-2 left-[50%] transform w-[80%] lg:w-[90%] translate-x-[-50%] flex items-center gap-4 md:py-3 px-6 rounded-2xl z-50 shadow-lg justify-between bg-[rgba(0,0,0,0.671)] backdrop-blur-md py-2">
+    <motion.header
+      className="fixed top-3 lg:top-2 left-[50%] transform w-[80%] lg:w-[90%] translate-x-[-50%] flex items-center gap-4 md:py-3 px-6 rounded-2xl z-50 shadow-lg justify-between bg-[rgba(0,0,0,0.671)] backdrop-blur-md py-2"
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 1,
+        type: "spring",
+        stiffness: 200,
+      }}
+    >
       <h1 className="text-3xl font-lobstar text-white">Lokendra</h1>
       {/* For Large Screens */}
       <ul className="font-gothic gap-6 hidden md:flex  text-white px-3 rounded-xl sm:text-xl">
@@ -39,32 +61,38 @@ const Header = () => {
       </ul>
 
       {/* For Small Screens */}
-      <ul
-        className={`absolute bg-[rgba(0,0,0,0.8)] backdrop-blur-md top-15 w-[90%] flex flex-col items-center py-5 font-gothic gap-6 md:hidden  text-white px-3 rounded-xl space-y-3 ${
-          click ? "flex" : "hidden"
-        }`}
-      >
-        <li onClick={() => setClick(false)}>
-          <a href="#about" className="navbar-a">
-            About
-          </a>
-        </li>
-        <li onClick={() => setClick(false)}>
-          <a href="#skill" className="navbar-a">
-            Skills
-          </a>
-        </li>
-        <li onClick={() => setClick(false)}>
-          <a href="#project" className="navbar-a">
-            Project
-          </a>
-        </li>
-        <li onClick={() => setClick(false)}>
-          <a href="#contact" className="navbar-a">
-            Contact
-          </a>
-        </li>
-      </ul>
+      <AnimatePresence>
+        <motion.ul
+          variants={mobileNavVarient}
+          initial="hidden"
+          animate={click ? "visible" : "hidden"}
+          exit={{ opacity: 0, y: -100 }}
+          className={`absolute bg-[rgba(0,0,0,0.8)] backdrop-blur-md top-15 w-[90%] flex flex-col items-center py-5 font-gothic gap-6 md:hidden  text-white px-3 rounded-xl space-y-3 ${
+            click ? "flex" : "hidden"
+          }`}
+        >
+          <li onClick={() => setClick(false)}>
+            <a href="#about" className="navbar-a">
+              About
+            </a>
+          </li>
+          <li onClick={() => setClick(false)}>
+            <a href="#skill" className="navbar-a">
+              Skills
+            </a>
+          </li>
+          <li onClick={() => setClick(false)}>
+            <a href="#project" className="navbar-a">
+              Project
+            </a>
+          </li>
+          <li onClick={() => setClick(false)}>
+            <a href="#contact" className="navbar-a">
+              Contact
+            </a>
+          </li>
+        </motion.ul>
+      </AnimatePresence>
       <button
         className="md:hidden text-white cursor-pointer"
         onClick={() => setClick(!click)}
@@ -92,7 +120,7 @@ const Header = () => {
           <i className="fa-solid fa-moon  fa-sun"></i>
         </button> */}
       </div>
-    </header>
+    </motion.header>
   );
 };
 export default Header;
