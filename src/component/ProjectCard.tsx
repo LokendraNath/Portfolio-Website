@@ -1,13 +1,22 @@
+import { motion } from "framer-motion";
 interface ProjectCardProp {
   title: string;
   image: string;
   live: string;
   repo?: string;
 }
+const childVarients = {
+  hidden: { opacity: 0, y: -20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
 
-const ProjectCard = ({ title, image, live, repo }: ProjectCardProp) => {
+const ProjectCard = ({ title, image, live, repo, index }: ProjectCardProp) => {
   return (
-    <div
+    <motion.div
+      variants={childVarients}
       key={title}
       className="bg-stone-100 text-center rounded-2xl mb-7 sm:mb-15 lg:mb-7 transition duration-300 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),_0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] hover:-translate-y-4 hover:shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]"
     >
@@ -45,7 +54,7 @@ const ProjectCard = ({ title, image, live, repo }: ProjectCardProp) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default ProjectCard;
