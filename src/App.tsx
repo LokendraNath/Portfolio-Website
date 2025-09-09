@@ -9,11 +9,13 @@ const App = () => {
   return (
     <div className="px-3">
       <Header />
-      <About />
-      <Skills />
-      <Project />
-      <Contact />
-      <Footer />
+      <div className="font-gothic">
+        <About />
+        <Skills />
+        <Project />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 };

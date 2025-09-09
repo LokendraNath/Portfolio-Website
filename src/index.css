@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Poppins:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&display=swap");
 
 @import "tailwindcss";
 
 * {
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 @theme {
   --font-gothic: "Nanum Gothic Coding", monospace;
   --font-poppins: "Poppins", sans-serif;
+  --font-lobstar: "Lobster", sans-serif;
 }
 
 @layer components {
@@ -24,7 +26,7 @@
   }
   /* About */
   .btn {
-    @apply border sm:text-2xl sm:py-4 sm:px-7 lg:py-2 lg:px-5 py-2 px-5 text-xl lg:text-lg cursor-pointer  rounded-2xl font-semibold text-nowrap transition duration-300 ease-in-out hover:translate-y-[-4px] hover:shadow-2xl;
+    @apply border-l-2 border-r-2 sm:text-2xl sm:py-4 sm:px-7 lg:py-2 lg:px-5 py-2 px-5 text-xl lg:text-lg cursor-pointer  rounded-xl font-semibold text-nowrap transition duration-300 ease-in-out hover:translate-y-[-4px] hover:shadow-2xl;
   }
   .section-title {
     @apply text-4xl sm:text-5xl tracking-widest text-center font-semibold mb-15 lg:mb-10;
