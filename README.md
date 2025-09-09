@@ -6,7 +6,7 @@ A modern, performant, and responsive portfolio website built with **React**, **T
 
 ## ✨ Live Demo
 
-Experience the website live: **[portfolio-lokendra.vercel.app](https://portfolio-lokendra.vercel.app/)**
+Experience the website live: **[lokendranath.vercel.app](https://lokendranath.vercel.app/)**
 
 ## 🛠️ Tech Stack
 
