@@ -1,6 +1,11 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const About = () => {
+  // Scroll animation for image
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [300, 1200], [1, 0]);
+  const scale = useTransform(scrollY, [300, 1200], [1, 0]);
+
   return (
     <section
       id="about"
@@ -56,6 +61,7 @@ const About = () => {
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
+          style={{ opacity, scale }}
         >
           <img
             className="object-contain rounded-full"

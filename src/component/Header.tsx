@@ -22,8 +22,8 @@ const mobileNavVarient: Variants = {
 const Header = () => {
   // useScroll x useTransform
   const { scrollY } = useScroll();
-  const opacity = useTransform(scrollY, [700, 1000], [1, 0]);
-  const y = useTransform(scrollY, [900, 1000], [0, -100]);
+  const opacity = useTransform(scrollY, [900, 1000], [1, 0]);
+  const y = useTransform(scrollY, [900, 1000], [0, -50]);
 
   const [click, setClick] = useState(false);
 
