@@ -3,10 +3,6 @@
 
 @import "tailwindcss";
 
-* {
-  /* font-family: "Poppins", sans-serif; */
-}
-
 @theme {
   --font-gothic: "Nanum Gothic Coding", monospace;
   --font-poppins: "Poppins", sans-serif;
@@ -16,13 +12,13 @@
 @layer components {
   /* Header */
   .navbar-a {
-    @apply relative tracking-wide
+    @apply relative text-lg
            before:content-['']
            before:absolute before:left-0 before:bottom-[-4px]
            before:h-[2px] before:w-0
            hover:before:w-full
            before:transition-all before:duration-300
-           before:bg-[linear-gradient(to_right,rgb(0,157,255),rgb(255,0,255))] font-bold tracking-widest;
+           before:bg-[linear-gradient(to_right,rgb(0,157,255),rgb(255,0,255))] font-bold md:font-normal tracking-widest;
   }
   /* About */
   .btn {
