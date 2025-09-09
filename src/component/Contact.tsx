@@ -26,18 +26,24 @@ const Contact = () => {
         </h2>
       </div>
 
-      <motion.div
-        className="contact-container gap-30 flex lg:mt-5 items-center justify-center"
-        initial={{ opacity: 0, y: -70, scale: 0.9 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ delay: 1, type: "spring", stiffness: 200 }}
-      >
+      <div className="contact-container gap-30 flex lg:mt-10 items-center justify-center ">
         <div className="contact-right hidden lg:block">
-          <img src={rightLogo} alt="" className="w-80" />
+          <motion.img
+            src={rightLogo}
+            alt=""
+            className="w-90"
+            initial={{ opacity: 0, x: 30, scale: 0.9 }}
+            whileInView={{ opacity: 1, x: 0, scale: 1 }}
+            transition={{ delay: 1 }}
+          />
         </div>
-        <form
+        <motion.form
           action="https://api.web3forms.com/submit"
           method="POST"
+          className="contact-right hidden lg:block"
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 1 }}
           className="contact-left flex flex-col items-start gap-5"
         >
           <input
@@ -66,12 +72,12 @@ const Contact = () => {
           ></textarea>
           <button
             type="submit"
-            className="self-center py-2 text-white font-bold tracking-widest px-8 text-lg rounded-xl cursor-pointer bg-gradient-to-r to-[#027cc9cc] from-[#b300b3cc]"
+            className="self-center py-2 md:py-3 text-white font-bold tracking-widest px-8 md:px-10 text-lg md:text-xl rounded-xl cursor-pointer bg-gradient-to-r to-[#027cc9cc] from-[#b300b3cc]"
           >
             Submit
           </button>
-        </form>
-      </motion.div>
+        </motion.form>
+      </div>
     </section>
   );
 };
