@@ -13,7 +13,7 @@ const childVarients = {
   },
 };
 
-const ProjectCard = ({ title, image, live, repo, index }: ProjectCardProp) => {
+const ProjectCard = ({ title, image, live, repo }: ProjectCardProp) => {
   return (
     <motion.div
       variants={childVarients}

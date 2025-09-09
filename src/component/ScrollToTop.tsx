@@ -47,7 +47,7 @@ const ScrollToTopButton = () => {
                      z-50 cursor-pointer"
           aria-label="Scroll to top"
         >
-          <i class="fa-solid fa-arrow-up"></i>
+          <i className="fa-solid fa-arrow-up"></i>
         </motion.button>
       )}
     </AnimatePresence>

@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 
-const mobileNavVarient = {
+const mobileNavVarient: Variants = {
   hidden: { opacity: 0, y: -100 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       type: "spring",
-      stiffness: 200,
+      stiffness: 100,
     },
   },
 };
@@ -66,7 +67,6 @@ const Header = () => {
           variants={mobileNavVarient}
           initial="hidden"
           animate={click ? "visible" : "hidden"}
-          exit={{ opacity: 0, y: -100 }}
           className={`absolute bg-[rgba(0,0,0,0.8)] backdrop-blur-md top-15 w-[90%] flex flex-col items-center py-5 font-gothic gap-6 md:hidden  text-white px-3 rounded-xl space-y-3 ${
             click ? "flex" : "hidden"
           }`}

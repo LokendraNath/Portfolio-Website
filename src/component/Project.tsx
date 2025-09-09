@@ -76,8 +76,8 @@ const Project = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        {portfolioProjects.map((project, index) => (
-          <ProjectCard key={project.title} {...project} index={index} />
+        {portfolioProjects.map((project) => (
+          <ProjectCard key={project.title} {...project} />
         ))}
       </motion.div>
     </section>

@@ -3,6 +3,7 @@ import htmlIcon from "../../public/assets/skills/html.svg";
 import cssIcon from "../../public/assets/skills/css.svg";
 import jsIcon from "../../public/assets/skills/js.svg";
 import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 
 import twIcon from "../../public/assets/skills/tailwind-css.svg";
 import bsIcon from "../../public/assets/skills/bootstrap.svg";
@@ -35,7 +36,7 @@ const skills = [
   { name: "Figma", Icon: figma },
 ];
 
-const parentVarientMotion = {
+const parentVarientMotion: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -45,7 +46,7 @@ const parentVarientMotion = {
     },
   },
 };
-const childVarients = {
+const childVarients: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
