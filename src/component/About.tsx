@@ -2,9 +2,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center  px-2 lg:px-15 w-full lg:py-30"
+      className="min-h-screen flex items-center justify-center  px-2 lg:px-15 w-full lg:py-30 font-gothic mt-40 sm:mt-5"
     >
-      <div className="about-container flex sm:flex-col lg:flex-row items-center justify-center gap-22">
+      <div className="about-container flex flex-col  items-center lg:flex-rowitems-center justify-center gap-22">
         <div className="info-box flex flex-col text-center items-center lg:items-start gap-6 lg:gap-4">
           <div className="text mb-5 lg:mb-3 items-center lg:items-start flex flex-col">
             <h3 className="text-4xl sm:text-4xl lg:text-3xl mb-3 font-semibold opacity-70 ">
@@ -18,7 +18,7 @@ const About = () => {
             </span>
           </div>
 
-          <div className="btn-group flex gap-4 space-x-2 sm:space-x-10 lg:space-x-3">
+          <div className="flex gap-4 space-x-2 sm:space-x-10 lg:space-x-3">
             <a
               href="/resume.pdf"
               download="Lokendra_Nath_Resume.pdf"
@@ -44,7 +44,7 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className="hidden sm:block object-cover w-95 h-95 rounded-[50%] mix-blend-lighten bg-black shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
+        <div className="sm:block w-50 h-50 object-cover lg:w-95 lg:h-95 rounded-[50%] mix-blend-lighten bg-black shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]">
           <img
             className="object-contain rounded-full"
             src="/assets/img/lokendra-img.png"
