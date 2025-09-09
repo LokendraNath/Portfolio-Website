@@ -40,7 +40,6 @@ const Contact = () => {
         <motion.form
           action="https://api.web3forms.com/submit"
           method="POST"
-          className="contact-right hidden lg:block"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay: 1 }}
