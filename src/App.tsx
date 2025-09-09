@@ -5,6 +5,7 @@ import Footer from "./component/Footer";
 import Header from "./component/Header";
 import Project from "./component/Project";
 import Skills from "./component/Skills";
+import ScrollToTopButton from "./component/ScrollToTop";
 
 const App = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,6 +40,8 @@ const App = () => {
         <Contact />
         <Footer />
       </div>
+      {/* Scroll To Top */}
+      <ScrollToTopButton />
     </div>
   );
 };
