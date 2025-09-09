@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import {
+  AnimatePresence,
+  motion,
+  useScroll,
+  useTransform,
+} from "framer-motion";
 import type { Variants } from "framer-motion";
 
 const mobileNavVarient: Variants = {
@@ -15,6 +20,11 @@ const mobileNavVarient: Variants = {
 };
 
 const Header = () => {
+  // useScroll x useTransform
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [700, 1000], [1, 0]);
+  const y = useTransform(scrollY, [900, 1000], [0, -100]);
+
   const [click, setClick] = useState(false);
 
   useEffect(() => {
@@ -35,6 +45,7 @@ const Header = () => {
         type: "spring",
         stiffness: 200,
       }}
+      style={{ opacity, y }}
     >
       <h1 className="text-3xl font-lobstar text-white">Lokendra</h1>
       {/* For Large Screens */}
