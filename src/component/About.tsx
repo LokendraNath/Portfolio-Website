@@ -2,9 +2,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center  px-2 lg:px-15 w-full lg:py-30 font-gothic mt-40 sm:mt-5"
+      className="min-h-screen flex items-center justify-center  px-2 lg:px-15 w-full lg:py-30 font-gothic py-40 sm:mt-5"
     >
-      <div className="about-container flex flex-col  items-center lg:flex-rowitems-center justify-center gap-22">
+      <div className="about-container flex flex-col lg:flex-row items-center lg:flex-rowitems-center justify-center gap-22">
         <div className="info-box flex flex-col text-center items-center lg:items-start gap-6 lg:gap-4">
           <div className="text mb-5 lg:mb-3 items-center lg:items-start flex flex-col">
             <h3 className="text-4xl sm:text-4xl lg:text-3xl mb-3 font-semibold opacity-70 ">
