@@ -1,7 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [click, setClick] = useState(false);
+
+  useEffect(() => {
+    if (click) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [click]);
 
   return (
     <header className="fixed top-3 lg:top-2 left-[50%] transform w-[80%] lg:w-[90%] translate-x-[-50%] flex items-center gap-4 md:py-3 px-6 rounded-2xl z-50 shadow-lg justify-between bg-[rgba(0,0,0,0.671)] backdrop-blur-md py-2">
@@ -80,9 +88,9 @@ const Header = () => {
             GitHub
           </a>
         </button>
-        <button>
+        {/* <button>
           <i className="fa-solid fa-moon  fa-sun"></i>
-        </button>
+        </button> */}
       </div>
     </header>
   );
