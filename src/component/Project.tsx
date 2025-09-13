@@ -57,7 +57,6 @@ const portfolioProjects = [
     repo: "https://github.com/LokendraNath/Weather-App",
   },
 ];
-
 const parentVarientMotion = {
   hidden: { opacity: 0 },
   visible: {
