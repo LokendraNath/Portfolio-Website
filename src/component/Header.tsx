@@ -8,7 +8,7 @@ import {
 import type { Variants } from "framer-motion";
 
 const mobileNavVarient: Variants = {
-  hidden: { opacity: 0, y: -100 },
+  hidden: { opacity: 0, y: -100, x: -5 },
   visible: {
     opacity: 1,
     y: 0,
@@ -78,6 +78,7 @@ const Header = () => {
           variants={mobileNavVarient}
           initial="hidden"
           animate={click ? "visible" : "hidden"}
+          exit={{ opacity: 0, y: -100, x: -5 }}
           className={`absolute bg-[rgba(0,0,0,0.8)] backdrop-blur-md top-15 w-[90%] flex flex-col items-center py-5 font-gothic gap-6 md:hidden  text-white px-3 rounded-xl space-y-3 ${
             click ? "flex" : "hidden"
           }`}

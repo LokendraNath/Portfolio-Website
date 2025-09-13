@@ -9,9 +9,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center  px-2 lg:px-15 w-full lg:py-30 font-gothic py-40 sm:mt-5"
+      className="min-h-screen flex items-center justify-center  px-2 lg:px-15 w-full lg:py-30 font-gothic py-25 sm:mt-5"
     >
-      <div className="about-container flex flex-col lg:flex-row items-center lg:flex-rowitems-center justify-center gap-22">
+      <div className="about-container flex flex-col lg:flex-row items-center lg:flex-rowitems-center justify-center gap-x-22 gap-y-15">
         <motion.div
           className="info-box flex flex-col text-center items-center lg:items-start gap-6 lg:gap-4"
           initial={{ x: -100, opacity: 0 }}
