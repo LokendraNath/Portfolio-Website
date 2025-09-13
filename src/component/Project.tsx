@@ -2,33 +2,59 @@ import financeAdmin from "../../public/assets/Project Image/finance-admin.png";
 import ShoppingCart from "../../public/assets/Project Image/shoppingCart.png";
 import TravelPage from "../../public/assets/Project Image/travel-page.png";
 import expanceTracker from "../../public/assets/Project Image/Expense Tracker.png";
+import whetherApp from "../../public/assets/Project Image/whether app.png";
+import Fireboard from "../../public/assets/Project Image/fireBoard.png";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 
 const portfolioProjects = [
   {
-    title: "Finance Admin Page",
+    title: "CapitalEdge",
+    desc: "Financial Admin Page For  Analysis P/L",
     image: financeAdmin,
+    techStack: ["React,TS,TailwindCSS,Zustand,Router"],
     live: "https://admin-dashboard-lokendra.vercel.app/",
     repo: "https://github.com/LokendraNath/Admin-Dashboard",
   },
   {
-    title: "Shopping Cart",
+    title: "QuickBasket",
+    desc: "Shopping Cart App Simple UI",
     image: ShoppingCart,
+    techStack: ["React,TS,Tailwind"],
+    live: "https://shopping-cart-lokendra.vercel.app/",
+    repo: "https://github.com/LokendraNath/Shopping-Cart-Odin",
+  },
+  {
+    title: "FireBoard",
+    desc: "Coders Social Media (Only UI)",
+    image: Fireboard,
+    techStack: ["React,TailwindCSS"],
     live: "https://shopping-cart-lokendra.vercel.app/",
     repo: "https://github.com/LokendraNath/Shopping-Cart-Odin",
   },
   {
     title: "Travel App",
+    desc: "Book Chhattishgadh Best Place Destination In On Site",
     image: TravelPage,
+    techStack: ["HTML,CSS,Javascript"],
     live: "https://lokendra-travel-web.netlify.app/",
     repo: "https://github.com/LokendraNath/Travel-Website",
   },
   {
     title: "Expense Tracker",
+    desc: "Track Your Daily Expenses",
     image: expanceTracker,
+    techStack: ["HTML,CSS,Javascript"],
     live: "https://lokendra-expense-tracker.netlify.app/",
     repo: "#",
+  },
+  {
+    title: "Whether App",
+    desc: "Know About Worlds Whether In One Place",
+    image: whetherApp,
+    techStack: ["React,Zustand,Tailwind,TS"],
+    live: "#",
+    repo: "https://github.com/LokendraNath/Weather-App",
   },
 ];
 
@@ -37,7 +63,7 @@ const parentVarientMotion = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.5,
+      staggerChildren: 1,
       staggerDirection: 1,
     },
   },

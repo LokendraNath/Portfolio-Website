@@ -34,7 +34,7 @@ const Contact = () => {
             className="w-90"
             initial={{ opacity: 0, x: 30, scale: 0.9 }}
             whileInView={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ delay: 1 }}
+            transition={{ delay: 0.5 }}
           />
         </div>
         <motion.form
@@ -42,7 +42,7 @@ const Contact = () => {
           method="POST"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1 }}
+          transition={{ delay: 0.5 }}
           className="contact-left flex flex-col items-start gap-5"
         >
           <input

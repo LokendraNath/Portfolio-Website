@@ -16,7 +16,6 @@ import graphSqL from "../../public/assets/skills/graphql.svg";
 import materialUI from "../../public/assets/skills/material-ui.svg";
 import JEST from "../../public/assets/skills/jest.svg";
 import sass from "../../public/assets/skills/sass.svg";
-import restAPI from "../../public/assets/skills/rest-api.svg";
 
 const skills = [
   { name: "HTML", Icon: htmlIcon },
@@ -25,7 +24,6 @@ const skills = [
   { name: "SASS", Icon: sass },
   { name: "Tailwind", Icon: twIcon },
   { name: "Bootstrap", Icon: bsIcon },
-  { name: "RESTapi", Icon: restAPI },
   { name: "React", Icon: reactIcon },
   { name: "TypeScript", Icon: tsIcon },
   { name: "GraphQL", Icon: graphSqL },
