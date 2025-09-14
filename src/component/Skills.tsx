@@ -1,38 +1,82 @@
 // import SkillCard from "./SkillCard";
 import htmlIcon from "../../public/assets/skills/html.svg";
 import cssIcon from "../../public/assets/skills/css.svg";
-import jsIcon from "../../public/assets/skills/js.svg";
+import jsIcon from "../../public/assets/skills/javascript.png";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 
 import twIcon from "../../public/assets/skills/tailwind-css.svg";
-import bsIcon from "../../public/assets/skills/bootstrap.svg";
-import nmpIcon from "../../public/assets/skills/npm.svg";
-import tsIcon from "../../public/assets/skills/typescript.svg";
+import tsIcon from "../../public/assets/skills/typescript.png";
 import reactIcon from "../../public/assets/skills/react.svg";
-import figma from "../../public/assets/skills/figma.svg";
-import framerMotion from "../../public/assets/skills/brand-framer-motion.svg";
-import graphSqL from "../../public/assets/skills/graphql.svg";
+import git from "../../public/assets/skills/git.png";
+import framerMotion from "../../public/assets/skills/brand-framer-motion.png";
+// import graphSqL from "../../public/assets/skills/graphql.svg";
 import materialUI from "../../public/assets/skills/material-ui.svg";
-import JEST from "../../public/assets/skills/jest.svg";
-import sass from "../../public/assets/skills/sass.svg";
+import JEST from "../../public/assets/skills/jest.png";
+import testingLibrary from "../../public/assets/skills/testing-library_.png";
+// import sass from "../../public/assets/skills/sass.svg";
+import zustand from "../../public/assets/skills/zustand.svg";
+// import PostgresSQL from "../../public/assets/skills/postgresql_.png";
+import MongoDB from "../../public/assets/skills/mongodb_.png";
+import MySQL from "../../public/assets/skills/mysql_.png";
+import NodeJS from "../../public/assets/skills/node-js.svg";
+import ExpressJS from "../../public/assets/skills/express-js2.svg";
+import Learning from "../../public/assets/skills/learning2.png";
 
 const skills = [
   { name: "HTML", Icon: htmlIcon },
   { name: "CSS", Icon: cssIcon },
-  { name: "JS", Icon: jsIcon },
-  { name: "SASS", Icon: sass },
   { name: "Tailwind", Icon: twIcon },
-  { name: "Bootstrap", Icon: bsIcon },
-  { name: "React", Icon: reactIcon },
+  { name: "JS", Icon: jsIcon },
   { name: "TypeScript", Icon: tsIcon },
-  { name: "GraphQL", Icon: graphSqL },
-  { name: "Jest", Icon: JEST },
-  { name: "NPM", Icon: nmpIcon },
+  { name: "Git", Icon: git },
+  { name: "React", Icon: reactIcon },
+  { name: "Zustand", Icon: zustand },
   { name: "MaterialUI", Icon: materialUI },
   { name: "Motion", Icon: framerMotion },
-  { name: "Figma", Icon: figma },
+  { name: "Testing Library", Icon: testingLibrary },
+  { name: "Jest", Icon: JEST },
+  { name: "NodeJS", Icon: NodeJS },
+  { name: "ExpressJs", Icon: ExpressJS },
+  { name: "MongoDB", Icon: MongoDB },
+  // { name: "PostgresSQL", Icon: PostgresSQL },
+  { name: "MySQL", Icon: MySQL },
+  { name: "Learning...", Icon: Learning },
 ];
+
+//   { name: "HTML", Icon: htmlIcon },
+//   { name: "CSS", Icon: cssIcon },
+//   { name: "SASS", Icon: sass },
+//   { name: "Tailwind", Icon: twIcon },
+//   { name: "Bootstrap", Icon: bsIcon },
+//   { name: "Responsive / A11y", Icon: a11yIcon },
+//   { name: "Figma", Icon: figma },
+//   { name: "JS", Icon: jsIcon },
+//   { name: "TypeScript", Icon: tsIcon },
+//   { name: "React", Icon: reactIcon },
+//   { name: "Next.js", Icon: nextIcon },
+//   { name: "React Query", Icon: reactQueryIcon },
+//   { name: "Zustand", Icon: zustand },
+//   { name: "GraphQL", Icon: graphSqL },
+//   { name: "NPM / PNPM", Icon: nmpIcon },
+//   { name: "Vite / Webpack", Icon: viteIcon },
+//   { name: "ESLint / Prettier", Icon: lintIcon },
+//   { name: "Storybook", Icon: storybookIcon },
+//   { name: "Jest / Testing Library", Icon: JEST },
+//   { name: "Cypress", Icon: cypressIcon },
+//   { name: "Motion (Framer)", Icon: framerMotion },
+//   { name: "MaterialUI", Icon: materialUI },
+//   { name: "Git / GitHub", Icon: gitIcon },
+//   { name: "CI/CD (GitHub Actions)", Icon: ghaIcon },
+//   { name: "Vercel / Netlify", Icon: vercelIcon },
+//   { name: "Node.js / Express", Icon: nodeIcon },
+//   { name: "MongoDB / SQL", Icon: dbIcon },
+//   { name: "PWA / Service Worker", Icon: pwaIcon },
+//   { name: "Lighthouse / Perf", Icon: perfIcon },
+//   { name: "Sentry / Analytics", Icon: monitoringIcon },
+//   { name: "React Native (optional)", Icon: rnIcon },
+//   { name: "Docker (optional)", Icon: dockerIcon },
+// ];
 
 const parentVarientMotion: Variants = {
   hidden: { opacity: 0 },
@@ -76,9 +120,9 @@ const Skills = () => {
         ))}
       </h1>
 
-      <div className=" flex items-center justify-center sm:mt-20 lg:mt-10">
+      <div className="flex items-center justify-center sm:mt-20 lg:mt-10">
         <motion.div
-          className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-5 sm:gap-10"
+          className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-y-3  gap-x-5 sm:gap-x-20 sm:gap-y-5"
           variants={parentVarientMotion}
           initial="hidden"
           whileInView="visible"
@@ -92,9 +136,11 @@ const Skills = () => {
               // animate="visible"
             >
               {typeof Icon === "string" && (
-                <img src={Icon} className="w-18 md:w-22 mb-2 sm:mb-4" alt="" />
+                <img src={Icon} className="w-13 md:w-22 mb-2 sm:mb-4" alt="" />
               )}
-              <h3 className="text-sm sm:text-[25px] text-stone-800">{name}</h3>
+              <h3 className="text-[11px] text-center line-clamp-1 sm:text-[15px] text-stone-800">
+                {name}
+              </h3>
             </motion.div>
           ))}
         </motion.div>
