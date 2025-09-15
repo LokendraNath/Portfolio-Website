@@ -9,6 +9,7 @@ import twIcon from "../../public/assets/skills/tailwind-css.svg";
 import tsIcon from "../../public/assets/skills/typescript.png";
 import reactIcon from "../../public/assets/skills/react.svg";
 import git from "../../public/assets/skills/git.png";
+import redux from "../../public/assets/skills/redux.png";
 import framerMotion from "../../public/assets/skills/brand-framer-motion.png";
 // import graphSqL from "../../public/assets/skills/graphql.svg";
 import materialUI from "../../public/assets/skills/material-ui.svg";
@@ -31,6 +32,7 @@ const skills = [
   { name: "TypeScript", Icon: tsIcon },
   { name: "Git", Icon: git },
   { name: "React", Icon: reactIcon },
+  { name: "Redux", Icon: redux },
   { name: "Zustand", Icon: zustand },
   { name: "MaterialUI", Icon: materialUI },
   { name: "Motion", Icon: framerMotion },
