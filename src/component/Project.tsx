@@ -4,6 +4,7 @@ import TravelPage from "../../public/assets/Project Image/travel-page.png";
 import expanceTracker from "../../public/assets/Project Image/Expense Tracker.png";
 import whetherApp from "../../public/assets/Project Image/whether app.png";
 import Fireboard from "../../public/assets/Project Image/fireBoard.png";
+import Noteboard from "../../public/assets/Project Image/node board.png";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 
@@ -23,6 +24,14 @@ const portfolioProjects = [
     techStack: ["React,TS,Tailwind"],
     live: "https://shopping-cart-lokendra.vercel.app/",
     repo: "https://github.com/LokendraNath/Shopping-Cart-Odin",
+  },
+  {
+    title: "Noteboard",
+    desc: "Create And Manage Notes",
+    image: Noteboard,
+    techStack: ["React,MongoDB,Tailwind,Node.js,ExpressJs"],
+    live: "https://noteboard-zvav.onrender.com/",
+    repo: "https://github.com/LokendraNath/NoteBoard",
   },
   {
     title: "FireBoard",
