@@ -31,18 +31,18 @@ const Contact = () => {
           <motion.img
             src={rightLogo}
             alt=""
-            className="w-90"
-            initial={{ opacity: 0, x: 30, scale: 0.9 }}
-            whileInView={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ delay: 0.5 }}
+            className="w-100"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ delay: 1 }}
           />
         </div>
         <motion.form
           action="https://api.web3forms.com/submit"
           method="POST"
-          initial={{ opacity: 0, x: -30 }}
+          initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 1 }}
           className="contact-left flex flex-col items-start gap-5"
         >
           <input
