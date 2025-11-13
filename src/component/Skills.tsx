@@ -13,8 +13,6 @@ import redux from "../../public/assets/skills/redux.png";
 import framerMotion from "../../public/assets/skills/brand-framer-motion.png";
 // import graphSqL from "../../public/assets/skills/graphql.svg";
 import materialUI from "../../public/assets/skills/material-ui.svg";
-import JEST from "../../public/assets/skills/jest.png";
-import testingLibrary from "../../public/assets/skills/testing-library_.png";
 // import sass from "../../public/assets/skills/sass.svg";
 import zustand from "../../public/assets/skills/zustand.svg";
 // import PostgresSQL from "../../public/assets/skills/postgresql_.png";
@@ -36,8 +34,6 @@ const skills = [
   { name: "Zustand", Icon: zustand },
   { name: "MaterialUI", Icon: materialUI },
   { name: "Motion", Icon: framerMotion },
-  { name: "Testing Library", Icon: testingLibrary },
-  { name: "Jest", Icon: JEST },
   { name: "NodeJS", Icon: NodeJS },
   { name: "ExpressJs", Icon: ExpressJS },
   { name: "MongoDB", Icon: MongoDB },
@@ -64,7 +60,6 @@ const skills = [
 //   { name: "Vite / Webpack", Icon: viteIcon },
 //   { name: "ESLint / Prettier", Icon: lintIcon },
 //   { name: "Storybook", Icon: storybookIcon },
-//   { name: "Jest / Testing Library", Icon: JEST },
 //   { name: "Cypress", Icon: cypressIcon },
 //   { name: "Motion (Framer)", Icon: framerMotion },
 //   { name: "MaterialUI", Icon: materialUI },
