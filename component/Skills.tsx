@@ -59,37 +59,15 @@ const childVarients: Variants = {
 };
 
 const Skills = () => {
-  const text = "Skills";
-  const letters = text.split("");
-  // Motion
-
   return (
     <section
       id="skill"
       className="skill min-h-screen pt-20 sm:pt-40 lg:pt-22 px-10 lg:px-10 w-full"
     >
-      <h1 className="section-title">
-        {letters.map((letter, index) => (
-          <motion.span
-            key={index}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1 }}
-          >
-            {letter}
-          </motion.span>
-        ))}
-      </h1>
+      <h1 className="section-title">Skills</h1>
 
       <div className="flex items-center justify-center sm:mt-20 lg:mt-10">
-        <motion.div
-          className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-y-3  gap-x-5 sm:gap-x-20 sm:gap-y-5"
-          variants={parentVarientMotion}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-        >
+        <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-y-3  gap-x-5 sm:gap-x-20 sm:gap-y-5">
           {skills.map(({ name, Icon }) => (
             <motion.div
               key={name}
@@ -109,7 +87,7 @@ const Skills = () => {
               </h3>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

@@ -37,17 +37,7 @@ const Header = () => {
   }, [click]);
 
   return (
-    <motion.header
-      className="fixed top-3 lg:top-2 left-[50%] transform w-[80%] lg:w-[90%] translate-x-[-50%] flex items-center gap-4 md:py-3 px-6 rounded-2xl z-50 shadow-lg justify-between bg-[rgba(0,0,0,0.671)] backdrop-blur-md py-2"
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        duration: 1,
-        type: "spring",
-        stiffness: 200,
-      }}
-      style={{ opacity, y }}
-    >
+    <header className="fixed top-3 lg:top-2 left-[50%] transform w-[80%] lg:w-[90%] translate-x-[-50%] flex items-center gap-4 md:py-3 px-6 rounded-2xl z-50 shadow-lg justify-between bg-[rgba(0,0,0,0.671)] backdrop-blur-md py-2">
       <h1 className="text-3xl font-lobstar text-white">Lokendra</h1>
       {/* For Large Screens */}
       <ul className="font-gothic gap-6 hidden md:flex  text-white px-3 rounded-xl sm:text-xl">
@@ -133,7 +123,7 @@ const Header = () => {
           <i className="fa-solid fa-moon  fa-sun"></i>
         </button> */}
       </div>
-    </motion.header>
+    </header>
   );
 };
 export default Header;
