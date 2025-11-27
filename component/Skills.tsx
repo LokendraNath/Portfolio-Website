@@ -69,23 +69,17 @@ const Skills = () => {
       <div className="flex items-center justify-center sm:mt-20 lg:mt-10">
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-y-3  gap-x-5 sm:gap-x-20 sm:gap-y-5">
           {skills.map(({ name, Icon }) => (
-            <motion.div
-              key={name}
-              className="skillCardDiv"
-              variants={childVarients}
-              // animate="visible"
-            >
-              {typeof Icon === "string" && (
-                <Image
-                  src={Icon}
-                  className="w-13 md:w-22 mb-2 sm:mb-4"
-                  alt="Hello"
-                />
-              )}
+            <div key={name} className="skillCardDiv">
+              <Image
+                src={Icon}
+                className="w-13 md:w-22 mb-2 sm:mb-4"
+                alt="Hello"
+              />
+
               <h3 className="text-[11px] text-center line-clamp-1 sm:text-[15px] text-stone-800">
                 {name}
               </h3>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
