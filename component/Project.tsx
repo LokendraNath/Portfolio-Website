@@ -1,17 +1,17 @@
-import financeAdmin from "../../public/assets/Project Image/finance-admin.png";
-import ShoppingCart from "../../public/assets/Project Image/shoppingCart.png";
-import TravelPage from "../../public/assets/Project Image/travel-page.png";
-import expanceTracker from "../../public/assets/Project Image/Expense Tracker.png";
-import whetherApp from "../../public/assets/Project Image/whether app.png";
-import Noteboard from "../../public/assets/Project Image/node board.png";
-import ProjectCard from "./ProjectCard";
+"use client";
 import { motion } from "framer-motion";
+import CapitalEdge from "@/public/assets/ProjectImage/FinanceAdmin.png";
+import ShoppingCart from "@/public/assets/ProjectImage/ShoppingCard.png";
+import Noteboard from "@/public/assets/ProjectImage/NodeBoard.png";
+import TravelPage from "@/public/assets/ProjectImage/TravelPage.png";
+import expanceTracker from "@/public/assets/ProjectImage/ExpenseTracker.png";
+import ProjectCard from "@/component/ProjectCard";
 
 const portfolioProjects = [
   {
     title: "CapitalEdge",
     desc: "Financial Admin Page For  Analysis P/L",
-    image: financeAdmin,
+    image: CapitalEdge,
     techStack: ["React,TS,TailwindCSS,Zustand,Router"],
     live: "https://admin-dashboard-lokendra.vercel.app/",
     repo: "https://github.com/LokendraNath/Admin-Dashboard",
@@ -47,14 +47,6 @@ const portfolioProjects = [
     techStack: ["HTML,CSS,Javascript"],
     live: "https://lokendra-expense-tracker.netlify.app/",
     repo: "#",
-  },
-  {
-    title: "Whether App",
-    desc: "Know About Worlds Whether In One Place",
-    image: whetherApp,
-    techStack: ["React,Zustand,Tailwind,TS"],
-    live: "#",
-    repo: "https://github.com/LokendraNath/Weather-App",
   },
 ];
 const parentVarientMotion = {

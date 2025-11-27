@@ -2,7 +2,7 @@
 
 A modern, performant, and responsive portfolio website built with React, TypeScript, and Tailwind CSS. Enhanced with smooth and interactive animations using Framer Motion. Designed to showcase my skills, projects, and personality as a front-end developer, fully optimized for all devices.
 
-![Portfolio Screenshot](/public/assets/img/preview.png) <!-- Replace with an actual screenshot link -->
+![Portfolio Screenshot](/public/assets/img/preview.png)
 
 ## ✨ Live Demo
 

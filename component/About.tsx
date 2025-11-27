@@ -1,3 +1,4 @@
+"use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const About = () => {
@@ -25,7 +26,7 @@ const About = () => {
             <h1 className="text-5xl sm:text-7xl lg:text-6xl font-bold mb-2">
               Lokendra Nath
             </h1>
-            <span className="bg-gradient-to-r from-[#009dff] to-[#ff00ff] bg-clip-text sm:text-3xl text-transparent text-[22px] font-gothic tracking-wider">
+            <span className="bg-linear-to-r from-[#009dff] to-[#ff00ff] bg-clip-text sm:text-3xl text-transparent text-[22px] font-gothic tracking-wider">
               Software Developer
             </span>
           </div>

@@ -1,4 +1,5 @@
-import rightLogo from "../../public/assets/img/right-logo.png";
+"use client";
+import rightLogo from "@/public/assets/img/right-logo.png";
 import { motion } from "framer-motion";
 
 const Contact = () => {

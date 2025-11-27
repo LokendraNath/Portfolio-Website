@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import {
   AnimatePresence,
@@ -115,8 +116,8 @@ const Header = () => {
       </button>
       <div className="lg:flex items-center gap-3 hidden">
         <button
-          className=" px-4 py-2 rounded-lg text-white font-medium 
-         bg-gradient-to-r from-[#0077ff] to-[#f001f0] 
+          className=" px-4 py-2 rounded-lg text-white font-medium
+         bg-gradient-to-r from-[#0077ff] to-[#f001f0]
          hover:opacity-90 transition space-x-3 flex items-center"
         >
           <i className="fa-brands fa-github"></i>

@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 interface ProjectCardProp {
   title: string;
@@ -5,7 +6,7 @@ interface ProjectCardProp {
   image: string;
   live: string;
   techStack: string[];
-  repo?: string;
+  repo: string;
 }
 const childVarients = {
   hidden: { opacity: 0, y: -20 },
