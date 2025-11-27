@@ -68,11 +68,11 @@ const Contact = () => {
           <textarea
             name="message"
             placeholder="Your Message"
-            className="h-36 w-full pt-3.5 pl-6 font-medium text-lg rounded-xl bg-gradient-to-r from-[rgba(0,157,255,0.2)] to-[rgba(255,0,255,0.2)] outline-none focus:border focus:border-[#8383ff]"
+            className="h-36 w-full pt-3.5 pl-6 font-medium text-lg rounded-xl bg-linear-to-r from-[rgba(0,157,255,0.2)] to-[rgba(255,0,255,0.2)] outline-none focus:border focus:border-[#8383ff]"
           ></textarea>
           <button
             type="submit"
-            className="self-center py-2 md:py-3 text-white font-bold tracking-widest px-8 md:px-10 text-lg md:text-xl rounded-xl cursor-pointer bg-gradient-to-r to-[#027cc9cc] from-[#b300b3cc]"
+            className="self-center py-2 md:py-3 text-white font-bold tracking-widest px-8 md:px-10 text-lg md:text-xl rounded-xl cursor-pointer bg-linear-to-r to-[#027cc9cc] from-[#b300b3cc]"
           >
             Submit
           </button>

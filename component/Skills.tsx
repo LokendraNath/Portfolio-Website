@@ -89,7 +89,6 @@ const Skills = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          // animate="visible"
         >
           {skills.map(({ name, Icon }) => (
             <motion.div

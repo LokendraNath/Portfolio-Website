@@ -47,18 +47,18 @@ const About = () => {
 
           <div className="social space-x-10 sm:space-x-20 lg:space-x-10 mt-4 sm:mt-6 flex lg:pl-3">
             <a href="https://github.com/LokendraNath" target="_blank">
-              <i className="text-3xl lg:text-4xl sm:text-5xl cursor-pointer fa-brands fa-github transition duration-300 ease-in-out hover:translate-y-[-4px]"></i>
+              <i className="text-3xl lg:text-4xl sm:text-5xl cursor-pointer fa-brands fa-github transition duration-300 ease-in-out hover:-translate-y-1"></i>
             </a>
             <a href="https://www.linkedin.com/in/lokendranath/" target="_blank">
-              <i className="text-3xl sm:text-5xl lg:text-4xl cursor-pointer fa-brands fa-linkedin transition duration-300 ease-in-out hover:translate-y-[-4px]"></i>
+              <i className="text-3xl sm:text-5xl lg:text-4xl cursor-pointer fa-brands fa-linkedin transition duration-300 ease-in-out hover:-translate-y-1"></i>
             </a>
             <a href="https://x.com/iamlokendranath" target="_blank">
-              <i className="text-3xl sm:text-5xl lg:text-4xl cursor-pointer fa-brands fa-square-x-twitter transition duration-300 ease-in-out hover:translate-y-[-4px]"></i>
+              <i className="text-3xl sm:text-5xl lg:text-4xl cursor-pointer fa-brands fa-square-x-twitter transition duration-300 ease-in-out hover:-translate-y-1"></i>
             </a>
           </div>
         </motion.div>
         <motion.div
-          className="sm:block w-50 sm:w-72 object-cover lg:w-95 lg:h-95 rounded-[50%] bg-black shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]"
+          className="sm:block w-50 sm:w-72 object-cover lg:w-95 lg:h-95 rounded-[50%] bg-black shadow-[0_2.8px_2.2px_rgba(0,0,0,0.034),0_6.7px_5.3px_rgba(0,0,0,0.048),0_12.5px_10px_rgba(0,0,0,0.06),0_22.3px_17.9px_rgba(0,0,0,0.072),0_41.8px_33.4px_rgba(0,0,0,0.086),0_100px_80px_rgba(0,0,0,0.12)]"
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.4, type: "spring", stiffness: 200 }}
