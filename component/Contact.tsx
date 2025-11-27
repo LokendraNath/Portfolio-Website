@@ -15,7 +15,7 @@ const Contact = () => {
 
       <div className="contact-container gap-30 flex lg:mt-10 items-center justify-center ">
         <div className="contact-right hidden lg:block">
-          <Image src={rightLogo} alt="dfd" className="w-100" />
+          <Image src={rightLogo} alt="dfd" className="w-80" />
         </div>
         <form
           action="https://api.web3forms.com/submit"

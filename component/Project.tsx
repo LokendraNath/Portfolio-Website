@@ -31,7 +31,7 @@ const portfolioProjects = [
   {
     title: "Noteboard",
     desc: "Create And Manage Notes",
-    image: "/assets/ProjectImage/FireBoard.png",
+    image: "/assets/ProjectImage/NodeBoard.png",
     techStack: ["React,MongoDB,Tailwind,Node.js,ExpressJs"],
     live: "https://noteboard-zvav.onrender.com/",
     repo: "https://github.com/LokendraNath/NoteBoard",
@@ -79,7 +79,7 @@ const Project = () => {
             className="bg-stone-100 text-center rounded-2xl mb-7 sm:mb-15 lg:mb-7 transition duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-5"
           >
             <Image
-              className="rounded-t-2xl h-45 w-full object-cover"
+              className="rounded-t-2xl h-45 w-full object-cover object-top"
               height={1000}
               width={1000}
               src={project.image}
