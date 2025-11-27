@@ -1,7 +1,17 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 const portfolioProjects = [
+  {
+    title: "TheraLink AI",
+    desc: "AI Powered Therapy Booking Platform",
+    image: "/assets/ProjectImage/theralink.png",
+    techStack: ["Next.js, TypeScript, PostgresSQL, "],
+    live: "https://theralinkai.vercel.app/",
+    repo: "https://github.com/LokendraNath/TheraLink",
+  },
   {
     title: "CapitalEdge",
     desc: "Financial Admin Page For  Analysis P/L",
@@ -60,16 +70,18 @@ const Project = () => {
       id="project"
       className=" flex items-center justify-center flex-col min-h-screen pt-20"
     >
-      <h2 className="section-title tracking-widest lg:mb-10">Projects</h2>
+      <h2 className="section-title tracking-widest lg:mb-20">Projects</h2>
 
       <div className="mb-10 px-2 grid gap-x-7 gap-y-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-10">
         {portfolioProjects.map((project) => (
           <div
             key={project.title}
-            className="bg-stone-100 text-center rounded-2xl mb-7 sm:mb-15 lg:mb-7 transition duration-300 shadow-[0px_0px_0px_1px_rgba(0,0,0,0.06),0px_1px_1px_-0.5px_rgba(0,0,0,0.06),0px_3px_3px_-1.5px_rgba(0,0,0,0.06),0px_6px_6px_-3px_rgba(0,0,0,0.06),0px_12px_12px_-6px_rgba(0,0,0,0.06),0px_24px_24px_-12px_rgba(0,0,0,0.06)] hover:-translate-y-4 hover:shadow-[0_2.8px_2.2px_rgba(0,0,0,0.034),0_6.7px_5.3px_rgba(0,0,0,0.048),0_12.5px_10px_rgba(0,0,0,0.06),0_22.3px_17.9px_rgba(0,0,0,0.072),0_41.8px_33.4px_rgba(0,0,0,0.086),0_100px_80px_rgba(0,0,0,0.12)]"
+            className="bg-stone-100 text-center rounded-2xl mb-7 sm:mb-15 lg:mb-7 transition duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-5"
           >
-            <img
-              className="rounded-t-2xl"
+            <Image
+              className="rounded-t-2xl h-45 w-full object-cover"
+              height={1000}
+              width={1000}
               src={project.image}
               alt={project.title}
             />
@@ -83,7 +95,7 @@ const Project = () => {
               </p>
               <div className="flex gap-4">
                 {/* GitHub Button */}
-                <a
+                <Link
                   href={project.repo}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -94,7 +106,7 @@ const Project = () => {
                   <span className="absolute inset-0 bg-white/10 scale-0 group-hover:scale-100 transition-transform duration-300 rounded-lg"></span>
                   <i className="fab fa-github relative z-10" />
                   <span className="relative z-10">GitHub</span>
-                </a>
+                </Link>
 
                 {/* Live Button */}
                 <a

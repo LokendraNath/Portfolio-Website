@@ -8,7 +8,7 @@ import Footer from "@/component/Footer";
 
 const Home = () => {
   return (
-    <div className="px-3 bg-white">
+    <div className="px-3 bg-stone-200/90">
       <Header />
       <div className="font-gothic">
         <About />
