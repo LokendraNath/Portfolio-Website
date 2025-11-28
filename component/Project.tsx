@@ -70,7 +70,7 @@ const Project = () => {
       id="project"
       className=" flex items-center justify-center flex-col min-h-screen pt-20"
     >
-      <h2 className="text-center text-4xl font-bold sm:mb-10">Projects</h2>
+      <h2 className="text-center text-4xl font-bold mb-10">Projects</h2>
 
       <div className="mb-10 px-2 grid gap-x-7 gap-y-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-10">
         {portfolioProjects.map((project) => (

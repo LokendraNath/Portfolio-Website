@@ -1,4 +1,5 @@
 "use client";
+import { Github, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -44,7 +45,7 @@ const Header = () => {
         </ul>
 
         <ul
-          className={`absolute bg-[rgba(0,0,0,0.8)] backdrop-blur-md top-15 w-[90%] flex flex-col items-center py-5 gap-6 md:hidden  px-3 rounded-xl space-y-3 ${
+          className={`absolute bg-base backdrop-blur-md top-15 w-[90%] flex flex-col items-center py-5 gap-6 md:hidden  px-3 rounded-xl space-y-3 ${
             click ? "flex" : "hidden"
           }`}
         >
@@ -73,26 +74,11 @@ const Header = () => {
           className="md:hidden cursor-pointer"
           onClick={() => setClick(!click)}
         >
+          {click ? <X className="w-5" /> : <Menu className="w-5" />}
           <i
             className={`fa-solid ${click ? "fa-xmark" : "fa-bars"} text-2xl`}
           ></i>
         </button>
-        <div className="lg:flex items-center gap-3 hidden">
-          <button
-            className=" px-4 py-2 rounded-lg font-medium
-         bg-linear-to-r from-[#0077ff] to-[#f001f0]
-         hover:opacity-90 transition space-x-3 flex items-center"
-          >
-            <i className="fa-brands fa-github"></i>
-            <a
-              href="https://github.com/LokendraNath"
-              target="_blank"
-              className=""
-            >
-              GitHub
-            </a>
-          </button>
-        </div>
       </nav>
     </header>
   );
