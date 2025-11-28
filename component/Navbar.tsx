@@ -1,84 +1,85 @@
 "use client";
-import { Github, Menu, X } from "lucide-react";
+import { Github, Menu, TextAlignEnd, X } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
-  const [click, setClick] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    if (click) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-  }, [click]);
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setScrolled(offset > 10);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const navLinks = [
+    { name: "Home", href: "#" },
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#services" },
+    { name: "Resume", href: "#resume" },
+    { name: "Contact", href: "#contact" },
+  ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out">
+    <header
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out ${
+        scrolled ? "bg-white/30 backdrop-blur-md" : "bg-base"
+      }`}
+    >
       <nav className="flex items-center justify-between max-w-6xl mx-auto w-[90%] py-4">
-        <Link href={"#"} className="text-2xl md:text-3xl font-bold mr-6">
-          Lokendra <span className="">.</span>
-        </Link>
-        {/* For Large Screens */}
-        <ul className="gap-6 hidden md:flex  px-3 rounded-xl sm:text-xl">
-          <li>
-            <a href="#about" className="navbar-a">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#skill" className="navbar-a">
-              Skills
-            </a>
-          </li>
-          <li>
-            <a href="#project" className="navbar-a">
-              Project
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="navbar-a">
-              Contact
-            </a>
-          </li>
-        </ul>
-
-        <ul
-          className={`absolute bg-base backdrop-blur-md top-15 w-[90%] flex flex-col items-center py-5 gap-6 md:hidden  px-3 rounded-xl space-y-3 ${
-            click ? "flex" : "hidden"
-          }`}
+        <Link
+          href={"#"}
+          className="text-2xl md:text-3xl font-bold mr-6 tracking-wide"
         >
-          <li onClick={() => setClick(false)}>
-            <a href="#about" className="navbar-a">
-              About
+          Lokendra<span className="text-primary text-3xl">.</span>
+        </Link>
+
+        <div className="hidden min-[825px]:flex items-center gap-7  py-1 rounded-full px-3">
+          {navLinks.map((nav, index) => (
+            <a
+              href={nav.href}
+              key={index}
+              className="text-content tracking-wider text-[15px] font-bold hover:text-content-alter transition-all duration-300 ease-in-out"
+            >
+              {nav.name}
             </a>
-          </li>
-          <li onClick={() => setClick(false)}>
-            <a href="#skill" className="navbar-a">
-              Skills
-            </a>
-          </li>
-          <li onClick={() => setClick(false)}>
-            <a href="#project" className="navbar-a">
-              Project
-            </a>
-          </li>
-          <li onClick={() => setClick(false)}>
-            <a href="#contact" className="navbar-a">
-              Contact
-            </a>
-          </li>
-        </ul>
+          ))}
+        </div>
+
         <button
           className="md:hidden cursor-pointer"
-          onClick={() => setClick(!click)}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle"
         >
-          {click ? <X className="w-5" /> : <Menu className="w-5" />}
-          <i
-            className={`fa-solid ${click ? "fa-xmark" : "fa-bars"} text-2xl`}
-          ></i>
+          {isMenuOpen ? (
+            <X className="w-5" />
+          ) : (
+            <TextAlignEnd className="w-5" />
+          )}
         </button>
+
+        {isMenuOpen && (
+          <div className="min-[825px]:hidden fixed w-full top-20 z-50">
+            <div className="bg-base shadow-lg rounded-2xl mt-2 mx-auto w-full p-6">
+              <div className="flex flex-col items-center gap-4">
+                {navLinks.map((nav, index) => (
+                  <a
+                    href={nav.href}
+                    onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    key={index}
+                    className="text-content tracking-wider text-[18px] font-bold hover:text-content-alter py-3 border-b border-gray-100 transition-all duration-300 ease-in-out"
+                  >
+                    {nav.name}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </nav>
     </header>
   );
