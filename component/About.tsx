@@ -1,12 +1,5 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
-
 const About = () => {
-  // Scroll animation for image
-  const { scrollY } = useScroll();
-  const opacity = useTransform(scrollY, [300, 1200], [1, 0]);
-  const scale = useTransform(scrollY, [300, 1200], [1, 0]);
-
   return (
     <section
       id="about"

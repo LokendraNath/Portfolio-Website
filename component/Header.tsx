@@ -1,31 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import {
-  AnimatePresence,
-  motion,
-  useScroll,
-  useTransform,
-} from "framer-motion";
-import type { Variants } from "framer-motion";
-
-const mobileNavVarient: Variants = {
-  hidden: { opacity: 0, y: -100, x: -5 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-    },
-  },
-};
 
 const Header = () => {
-  // useScroll x useTransform
-  const { scrollY } = useScroll();
-  const opacity = useTransform(scrollY, [900, 1000], [1, 0]);
-  const y = useTransform(scrollY, [900, 1000], [0, -50]);
-
   const [click, setClick] = useState(false);
 
   useEffect(() => {
@@ -63,39 +39,32 @@ const Header = () => {
         </li>
       </ul>
 
-      {/* For Small Screens */}
-      <AnimatePresence>
-        <motion.ul
-          variants={mobileNavVarient}
-          initial="hidden"
-          animate={click ? "visible" : "hidden"}
-          exit={{ opacity: 0, y: -100, x: -5 }}
-          className={`absolute bg-[rgba(0,0,0,0.8)] backdrop-blur-md top-15 w-[90%] flex flex-col items-center py-5 font-gothic gap-6 md:hidden  text-white px-3 rounded-xl space-y-3 ${
-            click ? "flex" : "hidden"
-          }`}
-        >
-          <li onClick={() => setClick(false)}>
-            <a href="#about" className="navbar-a">
-              About
-            </a>
-          </li>
-          <li onClick={() => setClick(false)}>
-            <a href="#skill" className="navbar-a">
-              Skills
-            </a>
-          </li>
-          <li onClick={() => setClick(false)}>
-            <a href="#project" className="navbar-a">
-              Project
-            </a>
-          </li>
-          <li onClick={() => setClick(false)}>
-            <a href="#contact" className="navbar-a">
-              Contact
-            </a>
-          </li>
-        </motion.ul>
-      </AnimatePresence>
+      <ul
+        className={`absolute bg-[rgba(0,0,0,0.8)] backdrop-blur-md top-15 w-[90%] flex flex-col items-center py-5 font-gothic gap-6 md:hidden  text-white px-3 rounded-xl space-y-3 ${
+          click ? "flex" : "hidden"
+        }`}
+      >
+        <li onClick={() => setClick(false)}>
+          <a href="#about" className="navbar-a">
+            About
+          </a>
+        </li>
+        <li onClick={() => setClick(false)}>
+          <a href="#skill" className="navbar-a">
+            Skills
+          </a>
+        </li>
+        <li onClick={() => setClick(false)}>
+          <a href="#project" className="navbar-a">
+            Project
+          </a>
+        </li>
+        <li onClick={() => setClick(false)}>
+          <a href="#contact" className="navbar-a">
+            Contact
+          </a>
+        </li>
+      </ul>
       <button
         className="md:hidden text-white cursor-pointer"
         onClick={() => setClick(!click)}

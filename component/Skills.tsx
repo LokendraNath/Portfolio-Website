@@ -3,9 +3,6 @@
 import htmlIcon from "@/public/assets/skills/html.svg";
 import cssIcon from "@/public/assets/skills/css.svg";
 import jsIcon from "@/public/assets/skills/javascript.png";
-import { motion } from "framer-motion";
-import type { Variants } from "framer-motion";
-
 import twIcon from "@/public/assets/skills/tailwind-css.svg";
 import tsIcon from "@/public/assets/skills/typescript.png";
 import reactIcon from "@/public/assets/skills/react.svg";
@@ -19,6 +16,7 @@ import NodeJS from "@/public/assets/skills/node-js.svg";
 import ExpressJS from "@/public/assets/skills/express-js2.svg";
 import Learning from "@/public/assets/skills/learning2.png";
 import zustand from "@/public/assets/skills/zustand.svg";
+import nextjs from "@/public/assets/skills/nextjs.png";
 import Image from "next/image";
 
 const skills = [
@@ -38,25 +36,8 @@ const skills = [
   { name: "MongoDB", Icon: MongoDB },
   // { name: "PostgresSQL", Icon: PostgresSQL },
   { name: "MySQL", Icon: MySQL },
-  { name: "Learning...", Icon: Learning },
+  { name: "Next.js", Icon: nextjs },
 ];
-const parentVarientMotion: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-      staggerDirection: 1,
-    },
-  },
-};
-const childVarients: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: { type: "spring", stiffness: 400 },
-  },
-};
 
 const Skills = () => {
   return (

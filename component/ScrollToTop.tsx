@@ -1,5 +1,4 @@
 "use client";
-import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const ScrollToTopButton = () => {
@@ -28,31 +27,17 @@ const ScrollToTopButton = () => {
   };
 
   return (
-    <AnimatePresence>
+    <>
       {isVisible && (
-        <motion.button
-          initial={{ opacity: 0, scale: 0.5, y: 100 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.5, y: 100 }}
-          transition={{
-            type: "spring",
-            stiffness: 100,
-            damping: 15,
-          }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+        <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 w-10 h-10 bg-linear-to-b to-[#027cc9cc] from-[#b300b3cc] rounded-full text-white
-                     flex items-center justify-center shadow-lg
-                     focus:outline-none focus:ring-opacity-50
-                     z-50 cursor-pointer"
+          className="fixed bottom-8 right-8 w-10 h-10 bg-linear-to-b to-[#027cc9cc] from-[#b300b3cc] rounded-full text-white flex items-center justify-center shadow-lg focus:outline-none focus:ring-opacity-50 z-50 cursor-pointer"
           aria-label="Scroll to top"
         >
           <i className="fa-solid fa-arrow-up"></i>
-        </motion.button>
+        </button>
       )}
-    </AnimatePresence>
+    </>
   );
 };
-
 export default ScrollToTopButton;
