@@ -1,9 +1,13 @@
 "use client";
+
+import { ContactRoundIcon, Download } from "lucide-react";
+import Link from "next/link";
+
 const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center  px-2 lg:px-15 w-full lg:py-30 font-gothic py-25"
+      className="min-h-screen flex items-center justify-center  px-2 lg:px-15 w-full lg:py-30 py-25"
     >
       <div className="about-container flex flex-col lg:flex-row items-center lg:flex-rowitems-center justify-center gap-x-22 gap-y-15">
         <div className="info-box flex flex-col text-center items-center lg:items-start gap-6 lg:gap-4">
@@ -14,23 +18,23 @@ const About = () => {
             <h1 className="text-5xl sm:text-7xl lg:text-6xl font-bold mb-2">
               Lokendra Nath
             </h1>
-            <span className="bg-linear-to-r from-[#009dff] to-[#ff00ff] bg-clip-text sm:text-3xl text-transparent text-[22px] font-gothic tracking-wider">
+            <span className="bg-linear-to-r from-[#009dff] to-[#ff00ff] bg-clip-text sm:text-3xl text-transparent text-[22px] tracking-wider">
               Software Developer
             </span>
           </div>
 
           <div className="flex gap-4 space-x-2 sm:space-x-10 lg:space-x-3">
-            <a
+            <Link
               href="/resume.pdf"
               download="Lokendra_Nath_Resume.pdf"
-              className="btn"
+              className="btn flex gap-4"
             >
-              Resume <i className="fa-solid fa-download ml-2"></i>
-            </a>
+              Resume <Download className="w-5" />
+            </Link>
 
-            <a href="#contact" className="btn">
-              Contact
-            </a>
+            <Link href="#contact" className="btn flex gap-4">
+              Contact <ContactRoundIcon className="w-5" />
+            </Link>
           </div>
 
           <div className="social space-x-10 sm:space-x-20 lg:space-x-10 mt-4 sm:mt-6 flex lg:pl-3">

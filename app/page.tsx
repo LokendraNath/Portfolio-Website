@@ -1,6 +1,6 @@
 import ScrollToTopButton from "@/component/ScrollToTop";
 import About from "@/component/About";
-import Header from "@/component/Header";
+import Header from "@/component/Navbar";
 import Skills from "@/component/Skills";
 import Project from "@/component/Project";
 import Contact from "@/component/Contact";
@@ -8,9 +8,9 @@ import Footer from "@/component/Footer";
 
 const Home = () => {
   return (
-    <div className="px-3 bg-stone-200/90">
+    <div className="px-3">
       <Header />
-      <div className="font-gothic">
+      <div className="">
         <About />
         <Skills />
         <Project />

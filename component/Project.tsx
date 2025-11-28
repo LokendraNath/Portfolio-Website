@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { Eye, Folder } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -90,7 +90,7 @@ const Project = () => {
                 {project.title}
               </h3>
               <h3 className="text-sm mb-4">{project.desc}</h3>
-              <p className="text-[13px] font-gothic max-w-[80%] bg-linear-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent mb-3">
+              <p className="text-[13px] max-w-[80%] bg-linear-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent mb-3">
                 {project.techStack.join(", ")}
               </p>
               <div className="flex gap-4">
@@ -104,12 +104,12 @@ const Project = () => {
                 >
                   {/* Hover overlay */}
                   <span className="absolute inset-0 bg-white/10 scale-0 group-hover:scale-100 transition-transform duration-300 rounded-lg"></span>
-                  <i className="fab fa-github relative z-10" />
+                  <Folder className="w-4" />
                   <span className="relative z-10">GitHub</span>
                 </Link>
 
                 {/* Live Button */}
-                <a
+                <Link
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -117,9 +117,9 @@ const Project = () => {
                 >
                   {/* Gradient hover effect */}
                   <span className="absolute inset-0 bg-linear-to-r from-green-400 to-green-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-                  <i className="fas fa-external-link-alt relative z-10" />
+                  <Eye className="w-4" />
                   <span className="relative z-10">Live</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
