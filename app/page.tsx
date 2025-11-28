@@ -1,3 +1,4 @@
+"use client";
 import ScrollToTopButton from "@/component/ScrollToTop";
 import About from "@/component/About";
 import Header from "@/component/Navbar";
