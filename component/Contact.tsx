@@ -1,6 +1,5 @@
 "use client";
 import rightLogo from "@/public/assets/img/right-logo.png";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const Contact = () => {
@@ -10,7 +9,7 @@ const Contact = () => {
       id="contact"
     >
       <div className="contact-left-title">
-        <h2 className="section-title">Contact Me</h2>
+        <h2 className="text-center text-4xl font-bold sm:mb-10">Contact Me</h2>
       </div>
 
       <div className="contact-container gap-30 flex lg:mt-10 items-center justify-center ">

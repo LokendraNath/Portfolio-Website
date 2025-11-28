@@ -45,7 +45,7 @@ const Skills = () => {
       id="skill"
       className="skill min-h-screen pt-20 sm:pt-40 lg:pt-22 px-10 lg:px-10 w-full"
     >
-      <h1 className="section-title">Skills</h1>
+      <h1 className="text-center text-4xl font-bold">Skills</h1>
 
       <div className="flex items-center justify-center sm:mt-20 lg:mt-10">
         <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-y-3  gap-x-5 sm:gap-x-20 sm:gap-y-5">
