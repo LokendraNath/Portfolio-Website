@@ -18,10 +18,10 @@
 
 /* Colors */
 @theme {
-  --color-primary: #009dff;
-  --color-secondary: #007acc;
+  --color-primary: #61fffe;
+  --color-secondary: #00c8c0;
   --color-base: #e6f7ff;
-  --color-content: #0d1321;
+  --color-content: #0a2e2d;
   --color-alter: #5a6a7b;
   --color-outer: #dce8f5;
 }
