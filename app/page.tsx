@@ -1,6 +1,6 @@
 "use client";
 import ScrollToTopButton from "@/component/ScrollToTop";
-import About from "@/component/About";
+import About from "@/component/Hero";
 import Header from "@/component/Navbar";
 import Skills from "@/component/Skills";
 import Project from "@/component/Project";
