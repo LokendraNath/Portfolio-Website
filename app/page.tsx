@@ -2,7 +2,6 @@
 import ScrollToTopButton from "@/component/ScrollToTop";
 import About from "@/component/Hero";
 import Header from "@/component/Navbar";
-import Skills from "@/component/Skills";
 import Project from "@/component/Project";
 import Contact from "@/component/Contact";
 import Footer from "@/component/Footer";
@@ -13,7 +12,6 @@ const Home = () => {
       <Header />
       <div className="">
         <About />
-        <Skills />
         <Project />
         <Contact />
         <Footer />
