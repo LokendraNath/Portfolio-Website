@@ -53,21 +53,11 @@ const portfolioProjects = [
     repo: "#",
   },
 ];
-const parentVarientMotion = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 1,
-      staggerDirection: 1,
-    },
-  },
-};
 
 const Project = () => {
   return (
     <section
-      id="project"
+      id="projects"
       className=" flex items-center justify-center flex-col min-h-screen pt-20"
     >
       <h2 className="text-center text-4xl font-bold mb-10">Projects</h2>

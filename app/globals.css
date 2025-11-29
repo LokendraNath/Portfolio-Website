@@ -18,7 +18,7 @@
 
 /* Colors */
 @theme {
-  --color-primary: #61fffe;
+  --color-primary: #2dd4bf;
   --color-secondary: #00c8c0;
   --color-base: #e6f7ff;
   --color-content: #0a2e2d;
@@ -42,6 +42,6 @@
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #2DD4BF, #0891B2);
+  background: linear-gradient(to bottom, #2dd4bf, #0891b2);
   border-radius: 10px;
 }

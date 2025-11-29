@@ -1,5 +1,6 @@
 "use client";
 import { Github, Menu, TextAlignEnd, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 
@@ -19,7 +20,7 @@ const Header = () => {
   const navLinks = [
     { name: "Home", href: "#" },
     { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
+    { name: "Projects", href: "#projects" },
     { name: "Resume", href: "#resume" },
     { name: "Contact", href: "#contact" },
   ];
