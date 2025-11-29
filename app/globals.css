@@ -28,13 +28,12 @@
 
 @layer base {
   html {
-    /* @apply scroll-smooth scroll-pt-24; */
+    @apply scroll-smooth scroll-pt-24;
   }
   body {
     @apply bg-base;
   }
 }
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -43,6 +42,6 @@
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #009dff, rgb(255, 0, 255));
+  background: linear-gradient(to bottom, #2DD4BF, #0891B2);
   border-radius: 10px;
 }
