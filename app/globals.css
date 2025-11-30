@@ -28,7 +28,7 @@
 
 @layer base {
   html {
-    @apply scroll-smooth scroll-pt-24;
+    @apply scroll-smooth scroll-pt-20;
   }
   body {
     @apply bg-base;
