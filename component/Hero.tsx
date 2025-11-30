@@ -88,9 +88,9 @@ const Hero = () => {
             Works <LayoutDashboard className="w-4" />
           </a>
           <a
-            href="#/assets/resume.pdf"
+            href="#/assets/lokendra-resume.pdf"
             className="w-full md:w-auto py-2 px-6 rounded-full font-semibold border border-content/20 hover:border-content/40 hover:shadow-sm text-lg transition-all duration-300 flex items-center justify-center gap-2 hover:-translate-y-1"
-            download
+            download="lokendra-resume.pdf"
           >
             Resume <DownloadCloud className="w-4" />
           </a>

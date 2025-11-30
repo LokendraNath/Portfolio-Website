@@ -56,10 +56,7 @@ const portfolioProjects = [
 
 const Project = () => {
   return (
-    <section
-      id="projects"
-      className="flex items-center justify-center flex-col min-h-screen my-10"
-    >
+    <section id="projects" className="flex flex-col min-h-screen my-10">
       <h2 className="text-center text-4xl font-bold mb-10">Projects</h2>
 
       <div className="mb-10 px-2 grid gap-x-7 gap-y-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-10">
