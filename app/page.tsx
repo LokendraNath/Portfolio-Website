@@ -1,22 +1,21 @@
 "use client";
 import ScrollToTopButton from "@/component/ScrollToTop";
-import About from "@/component/Hero";
+import Hero from "@/component/Hero";
 import Header from "@/component/Navbar";
 import Project from "@/component/Project";
 import Contact from "@/component/Contact";
 import Footer from "@/component/Footer";
+import About from "@/component/About";
 
 const Home = () => {
   return (
     <div className="px-3">
       <Header />
-      <div className="">
-        <About />
-        <Project />
-        <Contact />
-        <Footer />
-      </div>
-      {/* Scroll To Top */}
+      <Hero />
+      <About />
+      <Project />
+      <Contact />
+      <Footer />
       <ScrollToTopButton />
     </div>
   );

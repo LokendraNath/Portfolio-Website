@@ -27,11 +27,11 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out ${
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out shadow-sm ${
         scrolled ? "bg-white/30 backdrop-blur-md" : "bg-base"
       }`}
     >
-      <nav className="flex items-center justify-between max-w-6xl mx-auto w-[90%] py-4">
+      <nav className="flex items-center justify-between max-w-6xl mx-auto w-[90%] py-3">
         <Link
           href={"#"}
           className="text-2xl md:text-3xl font-bold mr-6 tracking-wide"
