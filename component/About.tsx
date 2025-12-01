@@ -57,7 +57,7 @@ const About = () => {
       <h2 className="text-center text-4xl font-bold mb-7">About</h2>
 
       {/* About Data */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 px-4">
         {/* Card 1 */}
         <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 text-center border border-outer">
           <h3 className="text-5xl md:text-6xl font-bold bg-linear-to-b from-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-2">
