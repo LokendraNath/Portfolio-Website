@@ -159,7 +159,7 @@ const About = () => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center space-x-2 mb-2">
-                      <span className="text-sm font-medium text-primary bg-primary/10 px-2 py-1 rounded-lg">
+                      <span className="text-sm font-medium text-cyan-400 bg-primary/10 px-2 py-1 rounded-lg">
                         {item.year}
                       </span>
                     </div>
@@ -194,7 +194,7 @@ const About = () => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center space-x-2 mb-2">
-                      <span className="text-sm font-medium text-primary bg-primary/10 px-2 py-1 rounded-lg">
+                      <span className="text-sm font-medium text-cyan-400 bg-primary/10 px-2 py-1 rounded-lg">
                         {item.year}
                       </span>
                     </div>

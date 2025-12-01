@@ -83,7 +83,7 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center gap-5 w-full md:w-auto">
           <a
             href="#projects"
-            className="bg-linear-to-br from-teal-400 to-cyan-600 w-full md:w-auto py-2 px-8 text-white rounded-full font-semibold flex text-lg items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 hover:shadow-sm hover:-translate-y-1"
+            className="bg-linear-to-br from-cyan-400 to-cyan-500 w-full md:w-auto py-2 px-8 text-white rounded-full font-semibold flex text-lg items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 hover:shadow-sm hover:-translate-y-1"
           >
             Works <LayoutDashboard className="w-4" />
           </a>

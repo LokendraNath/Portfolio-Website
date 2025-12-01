@@ -112,7 +112,7 @@ const Project = () => {
                 {project.techStack.map((tech, index) => (
                   <span
                     key={index}
-                    className="text-xs font-semibold px-3 py-1 rounded-full bg-primary/15 text-secondary"
+                    className="text-xs font-semibold px-3 py-1 rounded-full bg-primary/15 text-cyan-500"
                   >
                     {tech}
                   </span>
@@ -135,7 +135,7 @@ const Project = () => {
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex justify-center items-center gap-2 px-4 py-1 rounded-xl font-bold transition-all duration-300 bg-primary text-content hover:bg-secondary hover:shadow-lg"
+                  className="inline-flex justify-center items-center gap-2 px-4 py-1 rounded-xl font-bold transition-all duration-300 bg-cyan-500 text-white hover:bg-cyan-600 hover:shadow-lg"
                 >
                   <span>Live</span>
                   <ArrowUpRight className="w-4 h-4" />

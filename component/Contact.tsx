@@ -71,7 +71,7 @@ const Contact = () => {
           <div className="md:col-span-2">
             <button
               type="submit"
-              className="mt-6 bg-linear-to-br from-teal-400 to-cyan-600  text-white text-[1rem] font-semibold py-3 px-6 rounded-2xl flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer"
+              className="mt-6 bg-linear-to-br from-cyan-400 to-cyan-500  text-white text-[1rem] font-semibold py-3 px-6 rounded-2xl flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer"
             >
               Send Message <SendIcon className="w-5" />
             </button>
