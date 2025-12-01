@@ -112,7 +112,7 @@ const Project = () => {
                 {project.techStack.map((tech, index) => (
                   <span
                     key={index}
-                    className="text-xs font-semibold px-3 py-1 rounded-full bg-primary/15 text-cyan-500"
+                    className="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-50 text-cyan-500"
                   >
                     {tech}
                   </span>
