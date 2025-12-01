@@ -6,7 +6,7 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <section id="contact" className="lg:px-10 flex flex-col mt-10 mb-25">
-      <h2 className="text-center text-4xl font-bold mb-7">Contact</h2>
+      <h2 className="text-center text-4xl font-bold mb-10 md:mb-15">Contact</h2>
       {/* Content Form */}
       <div className="flex items-center justify-center">
         <form
