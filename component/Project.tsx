@@ -1,5 +1,5 @@
 "use client";
-import { ArrowUpRight, Eye, Folder, Github } from "lucide-react";
+import { ArrowUpRight, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,15 +8,29 @@ const portfolioProjects = [
     title: "TheraLink AI",
     desc: "AI Powered Therapy Booking Platform",
     image: "/assets/ProjectImage/theralink.png",
-    techStack: ["Next.js, TypeScript, PostgresSQL, "],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "PostgreSQL",
+      "TailwindCSS",
+      "Clerk",
+      "ShadeCN",
+    ],
     live: "https://theralinkai.vercel.app/",
     repo: "https://github.com/LokendraNath/TheraLink",
   },
   {
     title: "CapitalEdge",
-    desc: "Financial Admin Page For  Analysis P/L",
+    desc: "Financial Admin Page For Analysis P/L",
     image: "/assets/ProjectImage/FinanceAdmin.png",
-    techStack: ["React,TS,TailwindCSS,Zustand,Router"],
+    techStack: [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Zustand",
+      "React Router",
+      "Chart.js",
+    ],
     live: "https://admin-dashboard-lokendra.vercel.app/",
     repo: "https://github.com/LokendraNath/Admin-Dashboard",
   },
@@ -24,7 +38,7 @@ const portfolioProjects = [
     title: "QuickBasket",
     desc: "Shopping Cart App Simple UI",
     image: "/assets/ProjectImage/ShoppingCard.png",
-    techStack: ["React,TS,Tailwind"],
+    techStack: ["React", "TypeScript", "TailwindCSS", "API", "React Router"],
     live: "https://shopping-cart-lokendra.vercel.app/",
     repo: "https://github.com/LokendraNath/Shopping-Cart-Odin",
   },
@@ -32,15 +46,15 @@ const portfolioProjects = [
     title: "Noteboard",
     desc: "Create And Manage Notes",
     image: "/assets/ProjectImage/NodeBoard.png",
-    techStack: ["React,MongoDB,Tailwind,Node.js,ExpressJs"],
+    techStack: ["React", "MongoDB", "TailwindCSS", "Node.js", "Express.js"],
     live: "https://noteboard-zvav.onrender.com/",
     repo: "https://github.com/LokendraNath/NoteBoard",
   },
   {
     title: "Travel App",
-    desc: "Book Chhattishgadh Best Place Destination In On Site",
+    desc: "Book Chhattishgarh Best Destinations",
     image: "/assets/ProjectImage/TravelPage.png",
-    techStack: ["HTML,CSS,Javascript"],
+    techStack: ["HTML", "CSS", "JavaScript", "Scroll Reveal"],
     live: "https://lokendra-travel-web.netlify.app/",
     repo: "https://github.com/LokendraNath/Travel-Website",
   },
@@ -48,7 +62,7 @@ const portfolioProjects = [
     title: "Expense Tracker",
     desc: "Track Your Daily Expenses",
     image: "/assets/ProjectImage/ExpenseTracker.png",
-    techStack: ["HTML,CSS,Javascript"],
+    techStack: ["HTML", "CSS", "JavaScript", "Material UI"],
     live: "https://lokendra-expense-tracker.netlify.app/",
     repo: "#",
   },
@@ -56,52 +70,75 @@ const portfolioProjects = [
 
 const Project = () => {
   return (
-    <section id="projects" className="flex flex-col min-h-screen my-10">
-      <h2 className="text-center text-4xl font-bold mb-10">Projects</h2>
+    // Applied --color-base as background
+    <section
+      id="projects"
+      className="flex flex-col min-h-screen mt-10 lg:px-10"
+    >
+      {/* Heading with --color-content */}
+      <h2 className="text-center text-4xl font-bold mb-7">Projects</h2>
 
-      <div className="mb-10 px-2 grid gap-x-7 gap-y-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-10">
+      <div className="mb-10 px-4 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-12 max-w-7xl mx-auto">
         {portfolioProjects.map((project) => (
           <div
             key={project.title}
-            className=" bg-stone-100 text-center rounded-2xl transform transition-all duration-300 shadow-[0px_18px_50px_-10px_rgba(0,0,0,0.2)] hover:shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] hover:-translate-y-2"
+            // Card: White bg, Border uses --color-outer, Text uses --color-content
+            // Hover: Border becomes --color-primary, Shadow increases
+            className="group bg-white border border-outer rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:border-primary hover:shadow-xl"
           >
-            <Image
-              className="rounded-t-2xl h-45 w-full object-cover object-top"
-              height={1000}
-              width={1000}
-              src={project.image}
-              alt={project.title}
-            />
-            <div className="px-3 pb-3 lg:pt-4 flex flex-col items-center">
-              <h3 className="text-2xl sm:text-3xl lg:text-2xl tracking-wider mb-1 font-bold bg-linear-to-r from-slate-600 to-slate-800 bg-clip-text text-transparent">
+            <div className="relative overflow-hidden h-48 w-full">
+              <Image
+                className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                height={1000}
+                width={1000}
+                src={project.image}
+                alt={project.title}
+              />
+            </div>
+
+            <div className="p-5 flex flex-col items-center text-center">
+              {/* Title with --color-content */}
+              <h3 className="text-2xl font-bold mb-2 text-content tracking-wide">
                 {project.title}
               </h3>
-              <h3 className="text-sm mb-2">{project.desc}</h3>
-              <p className="text-[13px] max-w-[80%] bg-linear-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent mb-3">
-                {project.techStack.join(", ")}
+
+              {/* Desc with --color-content-alter */}
+              <p className="text-sm font-medium mb-4 text-content-alter">
+                {project.desc}
               </p>
-              <div className="flex gap-4">
-                {/* GitHub Button */}
+
+              {/* Tags: Bg is Primary with opacity, Text is Secondary */}
+              <div className="flex flex-wrap justify-center gap-2 mb-6">
+                {project.techStack.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="text-xs font-semibold px-3 py-1 rounded-full bg-primary/15 text-secondary"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex gap-4 w-full justify-center mt-auto">
+                {/* GitHub Button: Uses --color-content */}
                 <Link
                   href={project.repo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative group inline-flex items-center gap-2 px-5 py-1 rounded-lg font-semibold overflow-hidden transition-all duration-300"
-                  style={{ background: "#181717", color: "#fff" }}
+                  className="inline-flex justify-center items-center gap-2 px-4 py-1 rounded-xl font-semibold transition-all duration-300 bg-black text-white hover:bg-content/80 hover:shadow-lg"
                 >
-                  <Github className="w-4" />
-                  <span className="relative z-10">GitHub</span>
+                  <Github className="w-4 h-4" />
+                  <span>GitHub</span>
                 </Link>
 
-                {/* Live Button */}
                 <Link
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="relative group inline-flex items-center gap-2 px-5 py-1 rounded-lg font-semibold text-white overflow-hidden transition-all duration-300 bg-green-600 hover:bg-green-700"
+                  className="inline-flex justify-center items-center gap-2 px-4 py-1 rounded-xl font-bold transition-all duration-300 bg-primary text-content hover:bg-secondary hover:shadow-lg"
                 >
-                  <span className="relative z-10">Live</span>
-                  <ArrowUpRight className="w-4" />
+                  <span>Live</span>
+                  <ArrowUpRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -111,4 +148,5 @@ const Project = () => {
     </section>
   );
 };
+
 export default Project;
