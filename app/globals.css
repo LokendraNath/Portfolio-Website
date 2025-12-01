@@ -25,6 +25,9 @@
   --color-content-alter: #5a6a7b;
   --color-outer: #dce8f5;
 }
+html {
+  color-scheme: light;
+}
 
 @layer base {
   html {
