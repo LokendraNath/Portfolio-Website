@@ -54,7 +54,7 @@ const Hero = () => {
           Full Stack Developer
         </h1>
         {/* Icon Swipe */}
-        <div className="relative my-5 md:my-7 w-full mask-r-from-50% mask-l-from-50% overflow-hidden">
+        <div className="relative my-7 md:my-7 w-full mask-r-from-50% mask-l-from-50% overflow-hidden">
           <motion.div
             className="flex gap-7 w-max"
             animate={{ x: ["0%", "-50%"] }}
