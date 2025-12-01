@@ -67,7 +67,7 @@ const Footer = () => {
       {/* Copyright */}
       <p className="text-content-alter text-xs sm:text-sm tracking-widest font-medium text-center">
         © {new Date().getFullYear()} All Rights Reserved |{" "}
-        <span className="text-primary font-semibold">Lokendra Nath</span>
+        <span className="text-cyan-500 font-semibold">Lokendra Nath</span>
       </p>
     </footer>
   );

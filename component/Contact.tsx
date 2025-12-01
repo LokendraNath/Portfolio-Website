@@ -26,14 +26,14 @@ const Contact = () => {
               name="name"
               id="name"
               placeholder="Your Name*"
-              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-primary py-3"
+              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3"
               required
             />
             <input
               type="email"
               name="email"
               id="email"
-              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-primary py-3"
+              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3"
               placeholder="Your Email*"
               required
             />
@@ -44,7 +44,7 @@ const Contact = () => {
               type="text"
               name="company-name"
               id="comany-name"
-              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-primary py-3"
+              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3"
               placeholder="Company Name*"
               required
             />
@@ -52,7 +52,7 @@ const Contact = () => {
               type="tel"
               name="phone"
               id="phone"
-              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-primary py-3"
+              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3"
               placeholder="Phone Number*"
               required
             />
@@ -64,7 +64,7 @@ const Contact = () => {
               id=""
               placeholder="Message*"
               required
-              className="w-full border-b-2 border-outer bg-transparent focus:outline-none focus:border-primary py-2 h-24 resize-none"
+              className="w-full border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-2 h-24 resize-none"
             ></textarea>
           </div>
           {/* Button */}
