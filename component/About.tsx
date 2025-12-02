@@ -1,6 +1,5 @@
+import { firaCode, newRocker, syne } from "@/app/fonts";
 import { BriefcaseBusiness, Download, GraduationCap } from "lucide-react";
-import Link from "next/link";
-import React from "react";
 
 const About = () => {
   // Education Array
@@ -53,8 +52,13 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="flex flex-col min-h-screen mt-10 lg:px-10">
-      <h2 className="text-center text-4xl font-bold mb-7 dark:text-white">
+    <section
+      id="about"
+      className={`flex flex-col min-h-screen mt-10 lg:px-10 ${firaCode.className}`}
+    >
+      <h2
+        className={`text-center text-4xl font-bold mb-10 dark:text-white tracking-widest ${newRocker.className}`}
+      >
         About
       </h2>
 
@@ -62,24 +66,24 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 px-4">
         {/* Card 1 */}
         <div className="about-card">
-          <h3 className="about-card-h3">40+</h3>
+          <h3 className={`about-card-h3 ${syne.className}`}>40+</h3>
           <p className="about-card-p">Happy client</p>
         </div>
         {/* Card 2 */}
         <div className="about-card">
-          <h3 className="about-card-h3">2.5+</h3>
+          <h3 className={`about-card-h3 ${syne.className}`}>2.5+</h3>
           <p className="about-card-p">Year Of Experience</p>
         </div>
         {/* Card 3 */}
         <div className="about-card">
-          <h3 className="about-card-h3">50+</h3>
+          <h3 className={`about-card-h3 ${syne.className}`}>50+</h3>
           <p className="about-card-p">Project Done</p>
         </div>
       </div>
       {/* Content Text */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
         <div className="lg:col-span-2 space-y-6">
-          <p className="text-gray-600 dark:text-white text-lg leading-relaxed">
+          <p className="text-gray-600 dark:text-white text-[15px] leading-relaxed">
             I’m a MERN Stack and Next.js developer who builds fast, structured,
             and scalable web experiences. My work spans frontend engineering,
             backend architecture, and full-stack product delivery. I’ve
@@ -87,7 +91,7 @@ const About = () => {
             delivering clean interfaces, reliable APIs, and production-ready
             features that solve real problems.
           </p>
-          <p className="text-gray-600 dark:text-white text-lg leading-relaxed">
+          <p className="text-gray-600 dark:text-white text-[15px] leading-relaxed">
             I specialize in TypeScript, modern UI frameworks, and efficient
             workflows that keep codebases fast and maintainable. My approach
             blends problem-solving and product thinking, whether I’m crafting
@@ -96,7 +100,7 @@ const About = () => {
           </p>
         </div>
         {/* Right Colounm */}
-        <div className="lg:col-span-1 space-y-4">
+        <div className={`lg:col-span-1 space-y-4 ${syne.className}`}>
           <div>
             <p className="text-gray-500 dark:text-white/60 text-sm font-medium mb-1">
               Name
@@ -136,7 +140,9 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-12 mt-15">
         {/* Education */}
         <div>
-          <h3 className="text-xl md:text-2xl font-bold text-content mb-8 dark:text-secondary">
+          <h3
+            className={`text-xl md:text-2xl font-bold text-content mb-8 dark:text-secondary ${syne.className}`}
+          >
             My Education
           </h3>
           <div className="relative">
@@ -164,7 +170,7 @@ const About = () => {
                     <p className="text-gray-600 mb-2 dark:text-white/90">
                       {item.institute}
                     </p>
-                    <p className="text-gray-700 text-sm dark:text-white/80">
+                    <p className="text-gray-700 text-xs dark:text-white/80">
                       {item.description}
                     </p>
                   </div>
@@ -175,7 +181,9 @@ const About = () => {
         </div>
         {/* Work Experience */}
         <div>
-          <h3 className="text-xl md:text-2xl font-bold text-content mb-8 dark:text-secondary">
+          <h3
+            className={`text-xl md:text-2xl font-bold text-content mb-8 dark:text-secondary ${syne.className}`}
+          >
             Work Experience
           </h3>
           <div className="relative">
@@ -203,7 +211,7 @@ const About = () => {
                     <p className="text-gray-600 mb-2 dark:text-white/90">
                       {item.company}
                     </p>
-                    <p className="text-gray-700 text-sm dark:text-white/80">
+                    <p className="text-gray-700 text-xs dark:text-white/80">
                       {item.description}
                     </p>
                   </div>

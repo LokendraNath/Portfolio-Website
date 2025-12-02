@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { ariZonia, firaCode } from "@/app/fonts";
 
 const Footer = () => {
   return (
@@ -13,7 +14,7 @@ const Footer = () => {
           <li key={item}>
             <a
               href={item === "Home" ? "#" : `#${item.toLowerCase()}`}
-              className="font-medium text-content-alter dark:text-white transition-colors duration-300 hover:text-primary"
+              className={`font-medium text-content-alter dark:text-white transition-colors duration-300 hover:text-primary ${firaCode.className}`}
             >
               {item}
             </a>
@@ -67,7 +68,11 @@ const Footer = () => {
       {/* Copyright */}
       <p className="text-content-alter text-xs sm:text-sm tracking-widest font-medium text-center dark:text-white">
         © {new Date().getFullYear()} All Rights Reserved |{" "}
-        <span className="text-cyan-500 font-semibold">Lokendra Nath</span>
+        <span
+          className={`text-cyan-500 font-bold text-lg ${ariZonia.className}`}
+        >
+          Lokendra Nath
+        </span>
       </p>
     </footer>
   );

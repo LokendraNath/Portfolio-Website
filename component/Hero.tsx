@@ -1,5 +1,6 @@
 "use client";
 
+import { firaCode, newRocker } from "@/app/fonts";
 import lokendraImage from "@/public/assets/img/lokendra-img.png";
 import { motion } from "framer-motion";
 import {
@@ -46,11 +47,15 @@ const Hero = () => {
           />
         </div>
         {/* Name */}
-        <h3 className="text-lg md:text-xl font-semibold flex items-center justify-center gap-2 dark:text-white">
+        <h3
+          className={`text-lg md:text-xl font-semibold flex items-center justify-center gap-2 dark:text-white ${firaCode.className}`}
+        >
           I'm Lokendra Nath <span className="inline-block">👨‍💻</span>
         </h3>
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-semibold mt-2 dark:text-secondary">
+        <h1
+          className={`text-3xl md:text-5xl tracking-widest text-line font-semibold mt-2 dark:text-secondary ${newRocker.className}`}
+        >
           Full Stack Developer
         </h1>
         {/* Icon Swipe */}
@@ -83,20 +88,20 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center gap-5 w-full md:w-auto">
           <a
             href="#projects"
-            className="bg-linear-to-br from-cyan-400 to-cyan-500 dark:from-cyan-500 dark:to-cyan-600 w-full md:w-auto py-2 px-8 text-white rounded-full font-semibold flex text-lg items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 hover:shadow-sm hover:-translate-y-1"
+            className="bg-linear-to-br from-cyan-400 to-cyan-500 dark:from-cyan-500 dark:to-cyan-600 w-full md:w-auto py-2 px-8 text-white rounded-full font-semibold flex text-lg items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 hover:shadow-sm hover:-translate-y-1 dark:hover:shadow-lg dark:shadow-black"
           >
             Works <LayoutDashboard className="w-4" />
           </a>
           <a
             href="#/assets/lokendra-resume.pdf"
-            className="w-full md:w-auto py-2 px-6 rounded-full font-semibold border border-content/20 hover:border-content/40 hover:shadow-sm text-lg transition-all duration-300 flex items-center justify-center gap-2 hover:-translate-y-1 dark:text-secondary dark:border-secondary hover:dark:border-secondary/50"
+            className="w-full md:w-auto py-2 px-6 rounded-full font-semibold border border-content/20 hover:border-content/40 hover:shadow-sm text-lg transition-all duration-300 flex items-center justify-center gap-2 hover:-translate-y-1 dark:text-secondary dark:border-secondary hover:dark:border-secondary/50 dark:hover:shadow-lg dark:shadow-secondary"
             download="lokendra-resume.pdf"
           >
             Resume <DownloadCloud className="w-4" />
           </a>
         </div>
         {/* Social Icons */}
-        <div className="mt-10 md:mt-5 flex gap-10">
+        <div className="mt-10 md:mt-7 flex gap-10">
           <Link href="https://x.com/iamlokendranath" target="_blank">
             <Image
               src="/assets/social/x.png"

@@ -1,12 +1,15 @@
 "use client";
+import { firaCode, newRocker, syne } from "@/app/fonts";
 import rightLogo from "@/public/assets/img/right-logo.png";
 import { SendIcon } from "lucide-react";
 import Image from "next/image";
 
 const Contact = () => {
   return (
-    <section id="contact" className="lg:px-10 flex flex-col mt-10 mb-25">
-      <h2 className="text-center text-4xl font-bold mb-10 md:mb-15 dark:text-white">
+    <section id="contact" className={`lg:px-10 flex flex-col mt-10 mb-25 `}>
+      <h2
+        className={`text-center text-4xl font-bold mb-10 dark:text-white tracking-widest ${newRocker.className}`}
+      >
         Contact
       </h2>
       {/* Content Form */}
@@ -22,7 +25,7 @@ const Contact = () => {
             value="ca66f410-5601-4ac4-acfd-2482996dc816"
           />
           {/* Left Side */}
-          <div className="flex flex-col space-y-6">
+          <div className={`flex flex-col space-y-6 ${syne.className}`}>
             <input
               type="text"
               name="name"
@@ -41,7 +44,7 @@ const Contact = () => {
             />
           </div>
           {/* Right Side */}
-          <div className="flex flex-col space-y-6">
+          <div className={`flex flex-col space-y-6 ${syne.className}`}>
             <input
               type="text"
               name="company-name"
@@ -66,14 +69,14 @@ const Contact = () => {
               id=""
               placeholder="Message*"
               required
-              className="w-full border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-2 h-24 resize-none dark:text-white"
+              className={`w-full border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-2 h-24 resize-none dark:text-white pl-2 ${syne.className}`}
             ></textarea>
           </div>
           {/* Button */}
           <div className="md:col-span-2">
             <button
               type="submit"
-              className="mt-6 bg-linear-to-br from-cyan-400 to-cyan-500 dark:from-cyan-500 dark:to-cyan-600 text-white text-[1rem] font-semibold py-3 px-6 rounded-2xl flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer"
+              className={`mt-6 bg-linear-to-br from-cyan-400 to-cyan-500 dark:from-cyan-500 dark:to-cyan-600 text-white text-[1rem] font-semibold py-3 px-6 rounded-2xl flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer ${firaCode.className}`}
             >
               Send Message <SendIcon className="w-5" />
             </button>

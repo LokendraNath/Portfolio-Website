@@ -1,4 +1,5 @@
 "use client";
+import { firaCode, newRocker } from "@/app/fonts";
 import { ArrowUpRight, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +7,7 @@ import Link from "next/link";
 const portfolioProjects = [
   {
     title: "TheraLink AI",
-    desc: "AI Powered Therapy Booking Platform",
+    desc: "AI Powered Therapy Booking Platform.",
     image: "/assets/ProjectImage/theralink.png",
     techStack: [
       "Next.js",
@@ -21,7 +22,7 @@ const portfolioProjects = [
   },
   {
     title: "CapitalEdge",
-    desc: "Financial Admin Page For Analysis P/L",
+    desc: "Financial Admin Page For Analysis P/L.",
     image: "/assets/ProjectImage/FinanceAdmin.png",
     techStack: [
       "React",
@@ -36,7 +37,7 @@ const portfolioProjects = [
   },
   {
     title: "QuickBasket",
-    desc: "Shopping Cart App Simple UI",
+    desc: "Shopping Cart App Simple UI And Functionality.",
     image: "/assets/ProjectImage/ShoppingCard.png",
     techStack: ["React", "TypeScript", "TailwindCSS", "API", "React Router"],
     live: "https://shopping-cart-lokendra.vercel.app/",
@@ -44,7 +45,7 @@ const portfolioProjects = [
   },
   {
     title: "Noteboard",
-    desc: "Create And Manage Notes",
+    desc: "Create And Share Notes Across the World.",
     image: "/assets/ProjectImage/NodeBoard.png",
     techStack: ["React", "MongoDB", "TailwindCSS", "Node.js", "Express.js"],
     live: "https://noteboard-zvav.onrender.com/",
@@ -52,7 +53,7 @@ const portfolioProjects = [
   },
   {
     title: "Travel App",
-    desc: "Book Chhattishgarh Best Destinations",
+    desc: "Book Chhattishgarh Best Destinations.",
     image: "/assets/ProjectImage/TravelPage.png",
     techStack: ["HTML", "CSS", "JavaScript", "Scroll Reveal"],
     live: "https://lokendra-travel-web.netlify.app/",
@@ -60,7 +61,7 @@ const portfolioProjects = [
   },
   {
     title: "Expense Tracker",
-    desc: "Track Your Daily Expenses",
+    desc: "Track Your Daily Expenses And Guide.",
     image: "/assets/ProjectImage/ExpenseTracker.png",
     techStack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
     live: "https://lokendra-expense-tracker.netlify.app/",
@@ -73,10 +74,12 @@ const Project = () => {
     // Applied --color-base as background
     <section
       id="projects"
-      className="flex flex-col min-h-screen mt-10 lg:px-10"
+      className={`flex flex-col min-h-screen mt-10 lg:px-10 ${firaCode.className}`}
     >
       {/* Heading with --color-content */}
-      <h2 className="text-center text-4xl font-bold mb-7 dark:text-white">
+      <h2
+        className={`text-center text-4xl font-bold mb-10 dark:text-white tracking-widest ${newRocker.className}`}
+      >
         Projects
       </h2>
 

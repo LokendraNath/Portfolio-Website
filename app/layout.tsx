@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Syne } from "next/font/google";
 import "./globals.css";
-
-const syne = Syne({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
-});
+import { firaCode } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Lokendra Nath",
@@ -20,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${syne.className} antialiased`}
+        className={`${firaCode.className} antialiased`}
         suppressHydrationWarning={true}
       >
         {children}

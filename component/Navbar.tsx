@@ -1,4 +1,5 @@
 "use client";
+import { firaCode, newRocker } from "@/app/fonts";
 import { Github, Menu, TextAlignEnd, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -35,9 +36,9 @@ const Header = () => {
       <nav className="flex items-center justify-between mx-auto w-[90%] py-3">
         <Link
           href={"#"}
-          className="text-2xl md:text-3xl font-bold mr-6 tracking-wide dark:text-white"
+          className={`text-2xl md:text-3xl font-bold mr-6 dark:text-white tracking-widest ${newRocker.className}`}
         >
-          Lokendra<span className="text-primary text-3xl">.</span>
+          Lokendra<span className="text-primary text-3xl ml-1">.</span>
         </Link>
 
         <div className="hidden min-[825px]:flex items-center gap-7  py-1 rounded-full px-3 ">
@@ -45,7 +46,7 @@ const Header = () => {
             <a
               href={nav.href}
               key={index}
-              className="text-content dark:text-white tracking-wider text-[15px] font-bold hover:text-content-alter transition-all duration-300 ease-in-out"
+              className={`text-content dark:text-white tracking-wider text-[15px] font-bold hover:text-content-alter transition-all duration-300 ease-in-out dark:hover:text-secondary ${firaCode.className}`}
             >
               {nav.name}
             </a>
