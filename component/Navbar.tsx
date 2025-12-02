@@ -59,22 +59,22 @@ const Header = () => {
           aria-label="Toggle"
         >
           {isMenuOpen ? (
-            <X className="w-5" />
+            <X className="w-5 dark:text-white" />
           ) : (
-            <TextAlignEnd className="w-5" />
+            <TextAlignEnd className="w-5 dark:text-white" />
           )}
         </button>
 
         {isMenuOpen && (
-          <div className="min-[825px]:hidden fixed w-full top-20 z-50">
-            <div className="bg-base shadow-lg rounded-2xl mt-2 mx-auto w-full p-6">
+          <div className="fixed min-[825px]:hidden top-10 left-0 w-full z-50">
+            <div className="bg-base shadow-lg rounded-2xl mt-2 mx-auto w-full p-6 dark:bg-dark-base ">
               <div className="flex flex-col items-center gap-4">
                 {navLinks.map((nav, index) => (
                   <a
                     href={nav.href}
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                     key={index}
-                    className="text-content tracking-wider text-[18px] font-bold hover:text-content-alter py-3 border-b border-gray-100 transition-all duration-300 ease-in-out"
+                    className="text-content tracking-wider text-[18px] font-bold hover:text-content-alter py-3 border-b border-gray-100 transition-all duration-300 ease-in-out dark:text-white"
                   >
                     {nav.name}
                   </a>

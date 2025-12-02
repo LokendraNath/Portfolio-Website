@@ -54,7 +54,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className={`flex flex-col min-h-screen mt-10 lg:px-10 ${firaCode.className}`}
+      className={`flex flex-col min-h-screen mt-10 lg:px-10 px-5 ${firaCode.className}`}
     >
       <h2
         className={`text-center text-4xl font-bold mb-10 dark:text-white tracking-widest ${newRocker.className}`}
