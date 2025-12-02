@@ -89,7 +89,7 @@ const Project = () => {
             key={project.title}
             // Card: White bg, Border uses --color-outer, Text uses --color-content
             // Hover: Border becomes --color-primary, Shadow increases
-            className="group bg-white border border-outer rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:border-primary hover:shadow-lg dark:shadow-md dark:shadow-secondary"
+            className="group bg-white rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:border-primary hover:shadow-lg dark:shadow-md dark:shadow-secondary shadow-xs shadow-black"
           >
             <div className="relative overflow-hidden h-48 w-full">
               <Image
