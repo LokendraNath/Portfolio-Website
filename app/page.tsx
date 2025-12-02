@@ -9,7 +9,7 @@ import About from "@/component/About";
 
 const Home = () => {
   return (
-    <div className="px-3">
+    <div>
       <Header />
       <Hero />
       <About />

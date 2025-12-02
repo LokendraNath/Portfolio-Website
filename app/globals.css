@@ -18,8 +18,9 @@
 
 /* Colors */
 @theme {
-  --color-primary: #2dd4bf;
-  --color-secondary: #00c8c0;
+  --color-primary: #22d3ee;
+  --color-secondary: #06b6d4;
+  --color-dark-base: #1a2632;
   --color-base: #ffffff;
   --color-content: #0a2e2d;
   --color-content-alter: #5a6a7b;

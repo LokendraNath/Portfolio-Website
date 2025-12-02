@@ -32,8 +32,11 @@ const Hero = () => {
     "/assets/skills/mongodb.svg",
   ];
   return (
-    <section id="home" className="min-h-screen flex items-center">
-      <div className="max-w-3xl m-auto flex flex-col items-center justify-center text-center pt-24 md:pt-30 px-4 pb-8 overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen flex items-center bg-base dark:bg-dark-base"
+    >
+      <div className="max-w-3xl m-auto flex flex-col items-center justify-center text-center pt-24 md:pt-30 px-4 pb-8 overflow-hidden ">
         {/* Profile Image */}
         <div>
           <Image
@@ -46,11 +49,11 @@ const Hero = () => {
           />
         </div>
         {/* Name */}
-        <h3 className="text-lg md:text-xl font-semibold flex items-center justify-center gap-2">
+        <h3 className="text-lg md:text-xl font-semibold flex items-center justify-center gap-2 dark:text-white">
           I'm Lokendra Nath <span className="inline-block">👨‍💻</span>
         </h3>
         {/* Title */}
-        <h1 className="text-3xl md:text-5xl font-semibold mt-2">
+        <h1 className="text-3xl md:text-5xl font-semibold mt-2 dark:text-secondary">
           Full Stack Developer
         </h1>
         {/* Icon Swipe */}
@@ -83,13 +86,13 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center gap-5 w-full md:w-auto">
           <a
             href="#projects"
-            className="bg-linear-to-br from-cyan-400 to-cyan-500 w-full md:w-auto py-2 px-8 text-white rounded-full font-semibold flex text-lg items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 hover:shadow-sm hover:-translate-y-1"
+            className="bg-linear-to-br from-cyan-400 to-cyan-500 dark:from-cyan-500 dark:to-cyan-600 w-full md:w-auto py-2 px-8 text-white rounded-full font-semibold flex text-lg items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 hover:shadow-sm hover:-translate-y-1"
           >
             Works <LayoutDashboard className="w-4" />
           </a>
           <a
             href="#/assets/lokendra-resume.pdf"
-            className="w-full md:w-auto py-2 px-6 rounded-full font-semibold border border-content/20 hover:border-content/40 hover:shadow-sm text-lg transition-all duration-300 flex items-center justify-center gap-2 hover:-translate-y-1"
+            className="w-full md:w-auto py-2 px-6 rounded-full font-semibold border border-content/20 hover:border-content/40 hover:shadow-sm text-lg transition-all duration-300 flex items-center justify-center gap-2 hover:-translate-y-1 dark:text-secondary dark:border-secondary hover:dark:border-secondary/50"
             download="lokendra-resume.pdf"
           >
             Resume <DownloadCloud className="w-4" />
@@ -103,7 +106,7 @@ const Hero = () => {
               width={100}
               height={100}
               alt="X Logo"
-              className="w-7"
+              className="w-7 dark:invert"
             />
           </Link>
           <Link
@@ -115,7 +118,7 @@ const Hero = () => {
               width={100}
               height={100}
               alt="LinkedIn Logo"
-              className="w-7"
+              className="w-7 dark:invert"
             />
           </Link>
           <Link href="https://github.com/LokendraNath" target="_blank">
@@ -124,7 +127,7 @@ const Hero = () => {
               width={100}
               height={100}
               alt="Github Logo"
-              className="w-7"
+              className="w-7 dark:invert"
             />
           </Link>
         </div>

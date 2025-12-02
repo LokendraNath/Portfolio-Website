@@ -27,23 +27,25 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out shadow-sm ${
-        scrolled ? "bg-white/30 backdrop-blur-md" : "bg-base"
+        scrolled
+          ? "bg-white/30 backdrop-blur-md dark:bg-dark-base/90"
+          : "bg-base dark:bg-dark-base"
       }`}
     >
       <nav className="flex items-center justify-between max-w-6xl mx-auto w-[90%] py-3">
         <Link
           href={"#"}
-          className="text-2xl md:text-3xl font-bold mr-6 tracking-wide"
+          className="text-2xl md:text-3xl font-bold mr-6 tracking-wide dark:text-white"
         >
           Lokendra<span className="text-primary text-3xl">.</span>
         </Link>
 
-        <div className="hidden min-[825px]:flex items-center gap-7  py-1 rounded-full px-3">
+        <div className="hidden min-[825px]:flex items-center gap-7  py-1 rounded-full px-3 ">
           {navLinks.map((nav, index) => (
             <a
               href={nav.href}
               key={index}
-              className="text-content tracking-wider text-[15px] font-bold hover:text-content-alter transition-all duration-300 ease-in-out"
+              className="text-content dark:text-white tracking-wider text-[15px] font-bold hover:text-content-alter transition-all duration-300 ease-in-out"
             >
               {nav.name}
             </a>
