@@ -54,38 +54,32 @@ const About = () => {
 
   return (
     <section id="about" className="flex flex-col min-h-screen mt-10 lg:px-10">
-      <h2 className="text-center text-4xl font-bold mb-7">About</h2>
+      <h2 className="text-center text-4xl font-bold mb-7 dark:text-white">
+        About
+      </h2>
 
       {/* About Data */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 px-4">
         {/* Card 1 */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 text-center border border-outer">
-          <h3 className="text-5xl md:text-6xl font-bold bg-linear-to-b from-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-2">
-            40+
-          </h3>
-          <p className="text-gray-700 font-medium text-lg">Happy client</p>
+        <div className="about-card">
+          <h3 className="about-card-h3">40+</h3>
+          <p className="about-card-p">Happy client</p>
         </div>
         {/* Card 2 */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 text-center border border-outer">
-          <h3 className="text-5xl md:text-6xl font-bold bg-linear-to-b from-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-2">
-            2.5+
-          </h3>
-          <p className="text-gray-700 font-medium text-lg">
-            Year Of Experience
-          </p>
+        <div className="about-card">
+          <h3 className="about-card-h3">2.5+</h3>
+          <p className="about-card-p">Year Of Experience</p>
         </div>
         {/* Card 3 */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-4 text-center border border-outer">
-          <h3 className="text-5xl md:text-6xl font-bold bg-linear-to-b from-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-2">
-            50+
-          </h3>
-          <p className="text-gray-700 font-medium text-lg">Project Done</p>
+        <div className="about-card">
+          <h3 className="about-card-h3">50+</h3>
+          <p className="about-card-p">Project Done</p>
         </div>
       </div>
       {/* Content Text */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
         <div className="lg:col-span-2 space-y-6">
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className="text-gray-600 dark:text-white text-lg leading-relaxed">
             I’m a MERN Stack and Next.js developer who builds fast, structured,
             and scalable web experiences. My work spans frontend engineering,
             backend architecture, and full-stack product delivery. I’ve
@@ -93,44 +87,45 @@ const About = () => {
             delivering clean interfaces, reliable APIs, and production-ready
             features that solve real problems.
           </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className="text-gray-600 dark:text-white text-lg leading-relaxed">
             I specialize in TypeScript, modern UI frameworks, and efficient
             workflows that keep codebases fast and maintainable. My approach
             blends problem-solving and product thinking, whether I’m crafting
             pixel-perfect interfaces or building full-stack systems. I focus on
             clarity, quality, and results that matter.
           </p>
-          {/* Download Button
-          <a
-            href="/assets/lokendra-resume.pdf"
-            download="lokendra-resume.pdf"
-            className="bg-linear-to-b from-teal-400 to-cyan-600 text-white py-3 px-8 rounded-full font-semibold flex items-center w-max hover:opacity-90 gap-2 transition-opacity duration-300"
-          >
-            Download CV
-            <Download className="w-5" />
-          </a> */}
         </div>
         {/* Right Colounm */}
         <div className="lg:col-span-1 space-y-4">
           <div>
-            <p className="text-gray-500 text-sm font-medium mb-1">Name</p>
-            <p className="text-gray-800 text-xl font-semibold">Lokendra Nath</p>
+            <p className="text-gray-500 dark:text-white/60 text-sm font-medium mb-1">
+              Name
+            </p>
+            <p className="text-gray-800 dark:text-white text-xl font-semibold">
+              Lokendra Nath
+            </p>
           </div>
           <div>
-            <p className="text-gray-500 text-sm font-medium mb-1">Phone</p>
-            <p className="text-gray-800 text-xl font-semibold">
+            <p className="text-gray-500 dark:text-white/60 text-sm font-medium mb-1">
+              Phone
+            </p>
+            <p className="text-gray-800 dark:text-white text-xl font-semibold">
               +91 8269869510
             </p>
           </div>
           <div>
-            <p className="text-gray-500 text-sm font-medium mb-1">Email</p>
-            <p className="text-gray-800 text-xl font-semibold">
+            <p className="text-gray-500 dark:text-white/60 text-sm font-medium mb-1">
+              Email
+            </p>
+            <p className="text-gray-800 dark:text-white text-xl font-semibold">
               lokendraverma225@gmail.com
             </p>
           </div>
           <div>
-            <p className="text-gray-500 text-sm font-medium mb-1">Location</p>
-            <p className="text-gray-800 text-xl font-semibold">
+            <p className="text-gray-500 dark:text-white/60 text-sm font-medium mb-1">
+              Location
+            </p>
+            <p className="text-gray-800 dark:text-white text-xl font-semibold">
               Raipur, Chhattisgarh, India
             </p>
           </div>
@@ -141,7 +136,7 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 space-y-12 mt-15">
         {/* Education */}
         <div>
-          <h3 className="text-xl md:text-2xl font-bold text-content mb-8">
+          <h3 className="text-xl md:text-2xl font-bold text-content mb-8 dark:text-secondary">
             My Education
           </h3>
           <div className="relative">
@@ -159,15 +154,19 @@ const About = () => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center space-x-2 mb-2">
-                      <span className="text-sm font-medium text-cyan-400 bg-cyan-50 px-2 py-1 rounded-lg">
+                      <span className="text-sm font-medium text-cyan-400 bg-cyan-50 px-2 py-1 dark:bg-dark-base/50 dark:border dark:border-secondary/80 rounded-lg">
                         {item.year}
                       </span>
                     </div>
-                    <h4 className="text-lg font-semibold text-content">
+                    <h4 className="text-lg font-semibold text-content dark:text-white">
                       {item.title}
                     </h4>
-                    <p className="text-gray-600 mb-2">{item.institute}</p>
-                    <p className="text-gray-700 text-sm">{item.description}</p>
+                    <p className="text-gray-600 mb-2 dark:text-white/90">
+                      {item.institute}
+                    </p>
+                    <p className="text-gray-700 text-sm dark:text-white/80">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -176,7 +175,7 @@ const About = () => {
         </div>
         {/* Work Experience */}
         <div>
-          <h3 className="text-xl md:text-2xl font-bold text-content mb-8">
+          <h3 className="text-xl md:text-2xl font-bold text-content mb-8 dark:text-secondary">
             Work Experience
           </h3>
           <div className="relative">
@@ -194,15 +193,19 @@ const About = () => {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center space-x-2 mb-2">
-                      <span className="text-sm font-medium text-cyan-400 bg-cyan-50 px-2 py-1 rounded-lg">
+                      <span className="text-sm font-medium text-cyan-400 bg-cyan-50 px-2 py-1 dark:bg-dark-base/50 dark:border dark:border-secondary/80 rounded-lg">
                         {item.year}
                       </span>
                     </div>
-                    <h4 className="text-lg font-semibold text-content">
+                    <h4 className="text-lg font-semibold text-content dark:text-white">
                       {item.title}
                     </h4>
-                    <p className="text-gray-600 mb-2">{item.company}</p>
-                    <p className="text-gray-700 text-sm">{item.description}</p>
+                    <p className="text-gray-600 mb-2 dark:text-white/90">
+                      {item.company}
+                    </p>
+                    <p className="text-gray-700 text-sm dark:text-white/80">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               ))}

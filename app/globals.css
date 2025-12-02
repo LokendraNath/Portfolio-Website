@@ -49,3 +49,15 @@ html {
   background: linear-gradient(to bottom, #2dd4bf, #0891b2);
   border-radius: 10px;
 }
+
+/* About Data */
+
+.about-card {
+  @apply bg-white/10 dark:bg-dark-base/50 backdrop-blur-sm rounded-3xl p-4 text-center border border-outer dark:border-none dark:shadow-secondary dark:shadow-sm;
+}
+.about-card-h3 {
+  @apply text-5xl md:text-6xl font-bold bg-linear-to-b from-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-2;
+}
+.about-card-p {
+  @apply text-gray-700 font-medium text-lg dark:text-white;
+}

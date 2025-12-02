@@ -32,7 +32,7 @@ const Header = () => {
           : "bg-base dark:bg-dark-base"
       }`}
     >
-      <nav className="flex items-center justify-between max-w-6xl mx-auto w-[90%] py-3">
+      <nav className="flex items-center justify-between mx-auto w-[90%] py-3">
         <Link
           href={"#"}
           className="text-2xl md:text-3xl font-bold mr-6 tracking-wide dark:text-white"

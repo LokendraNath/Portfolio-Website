@@ -32,10 +32,7 @@ const Hero = () => {
     "/assets/skills/mongodb.svg",
   ];
   return (
-    <section
-      id="home"
-      className="min-h-screen flex items-center bg-base dark:bg-dark-base"
-    >
+    <section id="home" className="min-h-screen flex items-center ">
       <div className="max-w-3xl m-auto flex flex-col items-center justify-center text-center pt-24 md:pt-30 px-4 pb-8 overflow-hidden ">
         {/* Profile Image */}
         <div>
@@ -44,7 +41,7 @@ const Hero = () => {
             alt="Profile Image"
             width={150}
             height={150}
-            className="rounded-full mb-4 shadow-lg"
+            className="rounded-full mb-4 shadow-lg dark:shadow-xl dark:shadow-secondary/10"
             priority
           />
         </div>

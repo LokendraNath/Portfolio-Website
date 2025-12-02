@@ -78,7 +78,7 @@ const Project = () => {
       {/* Heading with --color-content */}
       <h2 className="text-center text-4xl font-bold mb-7">Projects</h2>
 
-      <div className="mb-10 px-4 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-12 max-w-7xl mx-auto">
+      <div className="mb-10 px-4 grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:px-12 mx-auto">
         {portfolioProjects.map((project) => (
           <div
             key={project.title}

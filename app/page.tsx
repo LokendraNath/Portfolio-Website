@@ -9,15 +9,17 @@ import About from "@/component/About";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Header />
-      <Hero />
-      <About />
-      <Project />
-      <Contact />
-      <Footer />
-      <ScrollToTopButton />
-    </div>
+      <div className="bg-base dark:bg-dark-base">
+        <Hero />
+        <About />
+        <Project />
+        <Contact />
+        <Footer />
+        <ScrollToTopButton />
+      </div>
+    </>
   );
 };
 export default Home;
