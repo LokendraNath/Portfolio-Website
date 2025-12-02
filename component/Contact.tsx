@@ -6,7 +6,9 @@ import Image from "next/image";
 const Contact = () => {
   return (
     <section id="contact" className="lg:px-10 flex flex-col mt-10 mb-25">
-      <h2 className="text-center text-4xl font-bold mb-10 md:mb-15">Contact</h2>
+      <h2 className="text-center text-4xl font-bold mb-10 md:mb-15 dark:text-white">
+        Contact
+      </h2>
       {/* Content Form */}
       <div className="flex items-center justify-center">
         <form
@@ -26,14 +28,14 @@ const Contact = () => {
               name="name"
               id="name"
               placeholder="Your Name*"
-              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3"
+              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3 dark:text-white pl-2 rounded-t-2xl"
               required
             />
             <input
               type="email"
               name="email"
               id="email"
-              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3"
+              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3 dark:text-white pl-2 rounded-t-2xl"
               placeholder="Your Email*"
               required
             />
@@ -44,7 +46,7 @@ const Contact = () => {
               type="text"
               name="company-name"
               id="comany-name"
-              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3"
+              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3 dark:text-white pl-2 rounded-t-2xl"
               placeholder="Company Name*"
               required
             />
@@ -52,7 +54,7 @@ const Contact = () => {
               type="tel"
               name="phone"
               id="phone"
-              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3"
+              className="border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-3 dark:text-white pl-2 rounded-t-2xl"
               placeholder="Phone Number*"
               required
             />
@@ -64,14 +66,14 @@ const Contact = () => {
               id=""
               placeholder="Message*"
               required
-              className="w-full border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-2 h-24 resize-none"
+              className="w-full border-b-2 border-outer bg-transparent focus:outline-none focus:border-cyan-500 py-2 h-24 resize-none dark:text-white"
             ></textarea>
           </div>
           {/* Button */}
           <div className="md:col-span-2">
             <button
               type="submit"
-              className="mt-6 bg-linear-to-br from-cyan-400 to-cyan-500  text-white text-[1rem] font-semibold py-3 px-6 rounded-2xl flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer"
+              className="mt-6 bg-linear-to-br from-cyan-400 to-cyan-500 dark:from-cyan-500 dark:to-cyan-600 text-white text-[1rem] font-semibold py-3 px-6 rounded-2xl flex items-center gap-2 hover:opacity-90 transition-opacity cursor-pointer"
             >
               Send Message <SendIcon className="w-5" />
             </button>
