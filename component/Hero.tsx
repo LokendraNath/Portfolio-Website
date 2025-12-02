@@ -54,7 +54,7 @@ const Hero = () => {
         </h3>
         {/* Title */}
         <h1
-          className={`text-3xl md:text-5xl tracking-widest text-line font-semibold mt-2 dark:text-secondary ${newRocker.className}`}
+          className={`text-3xl md:text-5xl tracking-widest text-line font-semibold mt-2 dark:text-primary ${newRocker.className}`}
         >
           Full Stack Developer
         </h1>

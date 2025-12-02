@@ -29,23 +29,23 @@ const About = () => {
   // Edperience Data
   const experineceData = [
     {
-      year: "May 2023 – Aug 2024",
+      year: "Jul 2023 – Aug 2024",
       title: "Frontend Developer",
-      company: "Freelance",
+      company: "Freelance, Remote",
       description:
         "Delivered multiple client projects involving responsive landing pages, business portfolios, and clean frontend interfaces while ensuring usability, clarity, and stable performance.",
     },
     {
-      year: "Aug 2024 – Apr 2025",
+      year: "Aug 2024 – Jan 2025",
       title: "Frontend Developer",
       company: "Vertex Suite IT Solution, Bhilai",
       description:
         "Developed modular UI components, dashboards, and user-facing features while improving code structure, performance, and overall frontend consistency across projects.",
     },
     {
-      year: "Apr 2025 – Present",
+      year: "Jan 2025 – Present",
       title: "Full Stack Developer",
-      company: "Vertex Suite IT Solution, Bhilai",
+      company: "Allsoft Consulting Pvt Ltd, Raipur",
       description:
         "Building full-stack features using MERN, Next.js, and TypeScript, working on APIs, backend workflows, and scalable system components for production environments.",
     },

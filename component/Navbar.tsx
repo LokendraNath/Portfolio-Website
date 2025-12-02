@@ -46,7 +46,7 @@ const Header = () => {
             <a
               href={nav.href}
               key={index}
-              className={`text-content dark:text-white tracking-wider text-[15px] font-bold hover:text-content-alter transition-all duration-300 ease-in-out dark:hover:text-secondary ${firaCode.className}`}
+              className={`text-content dark:text-white tracking-wider text-[15px] font-bold hover:text-content-alter transition-all duration-300 ease-in-out dark:hover:text-primary ${firaCode.className}`}
             >
               {nav.name}
             </a>

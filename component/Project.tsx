@@ -89,7 +89,7 @@ const Project = () => {
             key={project.title}
             // Card: White bg, Border uses --color-outer, Text uses --color-content
             // Hover: Border becomes --color-primary, Shadow increases
-            className="group bg-white rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:border-primary hover:shadow-lg dark:shadow-md dark:shadow-secondary shadow-xs shadow-black"
+            className="group bg-white rounded-2xl overflow-hidden transform transition-all duration-300 hover:scale-[1.02] hover:border-primary hover:shadow-lg dark:shadow-md dark:shadow-primary shadow-xs shadow-black"
           >
             <div className="relative overflow-hidden h-48 w-full">
               <Image
@@ -117,7 +117,7 @@ const Project = () => {
                 {project.techStack.map((tech, index) => (
                   <span
                     key={index}
-                    className="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-50 text-cyan-500 dark:text-secondary dark:border-secondary dark:border dark:bg-dark-base"
+                    className="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-50 text-cyan-500 dark:text-primary dark:border-primary dark:border dark:bg-dark-base"
                   >
                     {tech}
                   </span>
@@ -140,7 +140,7 @@ const Project = () => {
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex justify-center items-center gap-2 px-4 py-1 rounded-xl font-bold transition-all duration-300 bg-cyan-500 text-white dark:bg-secondary/90 hover:bg-cyan-600 hover:shadow-lg"
+                  className="inline-flex justify-center items-center gap-2 px-4 py-1 rounded-xl font-bold transition-all duration-300 bg-cyan-500 text-white dark:bg-primary/90 hover:bg-cyan-600 hover:shadow-lg"
                 >
                   <span>Live</span>
                   <ArrowUpRight className="w-4 h-4" />
