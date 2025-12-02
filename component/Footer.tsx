@@ -6,14 +6,14 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-5 mt-20 flex flex-col items-center justify-center border-t border-primary/20 backdrop-blur-sm">
+    <footer className="w-full py-5 mt-20 flex flex-col items-center justify-center border-t dark:border-white/40 border-primary/20 backdrop-blur-sm">
       {/* Navigation */}
-      <ul className="flex gap-6 sm:gap-10 mb-6">
+      <ul className="flex gap-6 sm:gap-10 mb-6 ">
         {["Home", "About", "Projects", "Contact"].map((item) => (
           <li key={item}>
             <a
               href={item === "Home" ? "#" : `#${item.toLowerCase()}`}
-              className="font-medium text-content-alter transition-colors duration-300 hover:text-primary"
+              className="font-medium text-content-alter dark:text-white transition-colors duration-300 hover:text-primary"
             >
               {item}
             </a>
@@ -33,7 +33,7 @@ const Footer = () => {
             width={100}
             height={100}
             alt="X Logo"
-            className="w-5 h-5 object-contain"
+            className="w-5 h-5 object-contain dark:invert"
           />
         </Link>
         <Link
@@ -46,7 +46,7 @@ const Footer = () => {
             width={100}
             height={100}
             alt="LinkedIn Logo"
-            className="w-5 h-5 object-contain"
+            className="w-5 h-5 object-contain dark:invert"
           />
         </Link>
         <Link
@@ -59,13 +59,13 @@ const Footer = () => {
             width={100}
             height={100}
             alt="Github Logo"
-            className="w-5 h-5 object-contain"
+            className="w-5 h-5 object-contain dark:invert"
           />
         </Link>
       </div>
 
       {/* Copyright */}
-      <p className="text-content-alter text-xs sm:text-sm tracking-widest font-medium text-center">
+      <p className="text-content-alter text-xs sm:text-sm tracking-widest font-medium text-center dark:text-white">
         © {new Date().getFullYear()} All Rights Reserved |{" "}
         <span className="text-cyan-500 font-semibold">Lokendra Nath</span>
       </p>
