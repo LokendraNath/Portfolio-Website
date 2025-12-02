@@ -37,7 +37,7 @@ const portfolioProjects = [
   },
   {
     title: "QuickBasket",
-    desc: "Shopping Cart App Simple UI And Functionality.",
+    desc: "Shopping Cart App",
     image: "/assets/ProjectImage/ShoppingCard.png",
     techStack: ["React", "TypeScript", "TailwindCSS", "API", "React Router"],
     live: "https://shopping-cart-lokendra.vercel.app/",
@@ -45,7 +45,7 @@ const portfolioProjects = [
   },
   {
     title: "Noteboard",
-    desc: "Create And Share Notes Across the World.",
+    desc: "Create And Share Notes",
     image: "/assets/ProjectImage/NodeBoard.png",
     techStack: ["React", "MongoDB", "TailwindCSS", "Node.js", "Express.js"],
     live: "https://noteboard-zvav.onrender.com/",
@@ -63,7 +63,7 @@ const portfolioProjects = [
     title: "Expense Tracker",
     desc: "Track Your Daily Expenses And Guide.",
     image: "/assets/ProjectImage/ExpenseTracker.png",
-    techStack: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+    techStack: ["HTML", "CSS", "JavaScript", "Bootstrap", "MaterialUI"],
     live: "https://lokendra-expense-tracker.netlify.app/",
     repo: "#",
   },
