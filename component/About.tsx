@@ -45,7 +45,7 @@ const About = () => {
     {
       year: "Jan 2025 – Present",
       title: "Full Stack Developer",
-      company: "Allsoft Consulting Pvt Ltd, Raipur",
+      company: "Allsoft Consulting, Raipur",
       description:
         "Building full-stack features using MERN, Next.js, and TypeScript, working on APIs, backend workflows, and scalable system components for production environments.",
     },
