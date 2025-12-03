@@ -38,14 +38,14 @@ const About = () => {
     {
       year: "Aug 2024 – Jan 2025",
       title: "Frontend Developer",
-      company: "Vertex Suite IT Solution, Bhilai",
+      company: "Vertex Suite, Bhilai",
       description:
         "Developed modular UI components, dashboards, and user-facing features while improving code structure, performance, and overall frontend consistency across projects.",
     },
     {
       year: "Jan 2025 – Present",
       title: "Full Stack Developer",
-      company: "Allsoft Consulting Pvt Ltd, Raipur",
+      company: "Allsoft Consulting, Raipur",
       description:
         "Building full-stack features using MERN, Next.js, and TypeScript, working on APIs, backend workflows, and scalable system components for production environments.",
     },
