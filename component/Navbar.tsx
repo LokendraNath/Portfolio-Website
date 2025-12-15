@@ -41,6 +41,7 @@ const Header = () => {
           Lokendra<span className="text-primary text-3xl ml-1">.</span>
         </Link>
 
+        {/* Desktop Links */}
         <div className="hidden min-[825px]:flex items-center gap-7  py-1 rounded-full px-3 ">
           {navLinks.map((nav, index) => (
             <a
@@ -53,6 +54,8 @@ const Header = () => {
           ))}
         </div>
 
+        {/* MObile Button */}
+
         <button
           className="md:hidden cursor-pointer"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -64,6 +67,8 @@ const Header = () => {
             <TextAlignEnd className="w-5 dark:text-white" />
           )}
         </button>
+
+        {/* Mobile Menu */}
 
         {isMenuOpen && (
           <div className="fixed min-[825px]:hidden top-10 left-0 w-full z-50">
@@ -83,6 +88,8 @@ const Header = () => {
             </div>
           </div>
         )}
+        
+
       </nav>
     </header>
   );
