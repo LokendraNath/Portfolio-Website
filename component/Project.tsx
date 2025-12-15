@@ -22,7 +22,7 @@ const portfolioProjects = [
   },
   {
     title: "CapitalEdge",
-    desc: "Financial Admin Page For Analysis P/L.",
+    desc: "Financial Admin Page For Analysis P/L And Orders",
     image: "/assets/ProjectImage/FinanceAdmin.png",
     techStack: [
       "React",
@@ -37,7 +37,7 @@ const portfolioProjects = [
   },
   {
     title: "QuickBasket",
-    desc: "Shopping Cart App Minimal And Better UI",
+    desc: "Shopping Cart App Minimal, Fast And Better UI",
     image: "/assets/ProjectImage/ShoppingCard.png",
     techStack: ["React", "TypeScript", "TailwindCSS", "API", "React Router"],
     live: "https://shopping-cart-lokendra.vercel.app/",
@@ -45,7 +45,7 @@ const portfolioProjects = [
   },
   {
     title: "Noteboard",
-    desc: "Create And Share Notes Across The World",
+    desc: "Create And Share Notes With Friends Across The World",
     image: "/assets/ProjectImage/NodeBoard.png",
     techStack: ["React", "MongoDB", "TailwindCSS", "Node.js", "Express.js"],
     live: "https://noteboard-zvav.onrender.com/",
@@ -53,7 +53,7 @@ const portfolioProjects = [
   },
   {
     title: "Travel App",
-    desc: "Book Chhattishgarh Best Destinations.",
+    desc: "Book India's Best Destinations Place Anyware.",
     image: "/assets/ProjectImage/TravelPage.png",
     techStack: ["HTML", "CSS", "JavaScript", "Scroll Reveal"],
     live: "https://lokendra-travel-web.netlify.app/",
