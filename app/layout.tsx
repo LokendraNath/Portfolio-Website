@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { firaCode } from "./fonts";
+import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Lokendra Nath",
@@ -13,12 +14,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${firaCode.className} antialiased`}
         suppressHydrationWarning={true}
       >
-        {children}
+        <ThemeProvider attribute="class" enableSystem defaultTheme="system">
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

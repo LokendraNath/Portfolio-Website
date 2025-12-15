@@ -1,5 +1,6 @@
 "use client";
 import { firaCode, newRocker } from "@/app/fonts";
+import { ThemeToggle } from "@/app/theme-toggle";
 import { Github, Menu, TextAlignEnd, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -52,6 +53,7 @@ const Header = () => {
               {nav.name}
             </a>
           ))}
+          <ThemeToggle />
         </div>
 
         {/* MObile Button */}
@@ -84,12 +86,11 @@ const Header = () => {
                     {nav.name}
                   </a>
                 ))}
+                <ThemeToggle />
               </div>
             </div>
           </div>
         )}
-        
-
       </nav>
     </header>
   );
