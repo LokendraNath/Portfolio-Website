@@ -6,7 +6,7 @@ A modern, performant, and responsive portfolio website built with React, TypeScr
 
 ## ✨ Live Demo
 
-Experience the website live: **[lokendranath.vercel.app](https://lokendranath.vercel.app/)**
+Experience the website live: **[Lokendra Nath Portfolio](https://lokendranath.vercel.app/)**
 
 ## 🛠️ Tech Stack
 
