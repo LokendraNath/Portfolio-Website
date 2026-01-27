@@ -53,7 +53,7 @@ const portfolioProjects = [
   },
   {
     title: "Travel App",
-    desc: "Book India's Best Destinations Place Anyware.",
+    desc: "Book India's Best Destinations Place Anyware Anyway !!.",
     image: "/assets/ProjectImage/TravelPage.png",
     techStack: ["HTML", "CSS", "JavaScript", "Scroll Reveal"],
     live: "https://lokendra-travel-web.netlify.app/",
@@ -61,7 +61,7 @@ const portfolioProjects = [
   },
   {
     title: "Expense Tracker",
-    desc: "Track Your Daily Expenses And Manage Your Money",
+    desc: "Track Your Daily Expenses And Manage Your Money Flow",
     image: "/assets/ProjectImage/ExpenseTracker.png",
     techStack: ["HTML", "CSS", "JavaScript", "Bootstrap", "MaterialUI"],
     live: "https://lokendra-expense-tracker.netlify.app/",
