@@ -26,7 +26,7 @@ const About = () => {
         "Studied core CS fundamentals, databases, basic DSA concepts, and software development principles, gaining a strong foundation for building full-stack applications.",
     },
   ];
-  // Edperience Data
+  // Experience Data
   const experineceData = [
     {
       year: "Jul 2023 – Aug 2024",
@@ -38,14 +38,14 @@ const About = () => {
     {
       year: "Aug 2024 – Jan 2025",
       title: "Frontend Developer",
-      company: "Vertex Suite, Bhilai",
+      company: "Vertex Suite Pvt Ltd, Bhilai, Chhattisgarh, India",
       description:
         "Developed modular UI components, dashboards, and user-facing features while improving code structure, performance, and overall frontend consistency across projects.",
     },
     {
       year: "Jan 2025 – Present",
       title: "Full Stack Developer",
-      company: "Allsoft Consulting, Raipur",
+      company: "Allsoft Consulting, Raipur, Chhattisgarh, India",
       description:
         "Building full-stack features using MERN, Next.js, and TypeScript, working on APIs, backend workflows, and scalable system components for production environments.",
     },
