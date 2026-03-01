@@ -111,14 +111,6 @@ const About = () => {
           </div>
           <div>
             <p className="text-gray-500 dark:text-white/60 text-sm font-medium mb-1">
-              Phone
-            </p>
-            <p className="text-gray-800 dark:text-white text-xl font-semibold">
-              +91 8269869510
-            </p>
-          </div>
-          <div>
-            <p className="text-gray-500 dark:text-white/60 text-sm font-medium mb-1">
               Email
             </p>
             <p className="text-gray-800 dark:text-white text-xl font-semibold">
